@@ -1,0 +1,115 @@
+---
+title: "Irene-Data Analysis Progress"
+author: "Mwaura Patrick"
+date: "2/1/2021"
+output: html_document
+---
+
+### Irene Data Analysis
+
+This analysis is being done at the request of the researcher
+
+```{r ,echo=FALSE,message=FALSE}
+options( warn = -1 )
+library(tidyverse)
+library(dplyr)
+library(readxl)
+library(here)
+library(skimr)
+library(kableExtra)
+library(AMR)
+library(scales)
+library(pipeR)
+library(cleaner)
+library(htmlTable)
+library(data.table)
+library(janitor)
+setwd("E:/RESULTS/Mwaura/mwaura/WORK1/Covid19/Irene Work")
+IRENE_DATA_ANALYSIS_R <- read_csv("IRENE DATA ANALYSIS R.csv")
+```
+
+### Summary of the data
+
+View the summary of the data
+
+```{r, echo=FALSE}
+#skimr::skim(IRENE_DATA_ANALYSIS_R) %>% kbl(caption = "Summary") %>% kable_classic(full_width = F, html_font = "Cambria")
+```
+### Number of camels from each of the Livestock Production System 
+With their Percentages and Bar Graph
+
+
+```{r, echo=FALSE}
+IRENE_DATA_ANALYSIS_R %>% tabyl(Community,LPS) %>%adorn_percentages("col") %>%
+  adorn_pct_formatting(digits = 2) %>%
+  adorn_ns() %>%  kbl(caption = "Ranch va Livestock production system With Percentages") %>% kable_classic(full_width = F, html_font = "Cambria")
+
+IRENE_DATA_ANALYSIS_R %>% select(Community,LPS) %>%  ggplot(aes(x=Community,fill=LPS))+geom_bar()+ylab("Count of Camels")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .5),color="black")
+```
+### Counts and Percentages of E.coli Isolated from all the camels
+This table counts and percentages of E.coli isolates in Extensive/Intensive location/Livestock procuction system
+
+```{r,echo=FALSE}
+IRENE_DATA_ANALYSIS_R %>% tabyl(mo,LPS) %>% adorn_percentages("row") %>%
+  adorn_pct_formatting(digits = 2) %>%
+  adorn_ns() %>%  kbl(caption = "E.coli recovered from each of the LPS") %>% kable_classic(full_width = F, html_font = "Cambria")
+```
+
+###Pie Chart
+The above table can be visualised as a pie chart
+```{r,echo=FALSE}
+IRENE_DATA_ANALYSIS_R %>% select(mo,CAMEL_ID_NUMBER) %>% group_by(mo) %>%  summarize(Count=n()) %>% mutate(Percentage=paste0(round(Count/sum(Count)*100,2),"%")) %>% ggplot(aes(x="", y=mo, fill=Percentage)) + geom_bar(stat="identity", width=1)+ coord_polar("y", start=0) +theme_classic()+labs( title = "Percentage of Particular Organism Detected")+scale_fill_manual(values=c( "#33658A", "#F6AE2D"))+theme(axis.line = element_blank(),axis.text = element_blank(),axis.ticks = element_blank(), plot.title = element_text(hjust = 0.5, color = "#666666"))+geom_text(aes(y = mo, label = mo), position = position_stack(vjust = .5),color = "white", size=3)
+
+```
+### Counts and percentages of the number of camels (female and male) from each livestock production system
+
+```{r,echo=FALSE}
+IRENE_DATA_ANALYSIS_R %>% tabyl(Gender,LPS) %>% adorn_percentages("row") %>%
+  adorn_pct_formatting(digits = 2) %>%
+  adorn_ns() %>%  kbl(caption = "Camels(Female and Male) from each of the LPS") %>% kable_classic(full_width = F, html_font = "Cambria")
+```
+
+### The count and percentages of  Resistance/Intermediate/Susceptible E.coli to all the antibiotics
+
+```{r,echo=FALSE}
+IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli") %>% select(AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% proportion_df(combine_SI = FALSE) %>% spread(key = interpretation,value = value) %>% kbl(caption = "Antibiotic Susceptability Intermediate and Resistance") %>%  kable_classic(full_width = F, html_font = "Cambria")
+```
+
+
+### Beta-lactams/penicillins
+Beta-lactam antibiotics are one of the most commonly prescribed drug classes with numerous clinical indications.
+
+From a biochemical point of view, these drugs have a common feature, which is the 3-carbon and 1-nitrogen ring (beta-lactam ring) that is highly reactive. This class includes:
+
+Penicillins,Cephalosporins,Carbapenems,Monobactams,Beta-lactamase inhibitors
+
+column 'AMC' (amoxicillin/clavulanic acid), column 'AMP'
+                                    (ampicillin), column 'OXA' (oxacillin), column 'TEM' (temocillin)
+NOTE: No antimicrobial agents of class cephalosporins (1st gen.) found (such as cefacetrile,
+      cephapirin).
+      Selecting cephalosporins (2nd gen.): column 'CEC' (cefaclor), column 'CXM' (cefuroxime)
+NOTE: No antimicrobial agents of class carbapenems found (such as doripenem, imipenem).
+```{r,echo=FALSE}
+IRENE_DATA_ANALYSIS_R %>%filter(mo=="Escherichia coli") %>%  select(mo,penicillins(),cephalosporins_1st(),cephalosporins_2nd(),carbapenems()) %>% mutate_at(vars(), as.rsi) %>% kbl(caption = "Beta-lactams/penicillins") %>%  kable_classic(full_width = F, html_font = "Cambria")
+```
+### Resisitance
+
+```{r,echo=FALSE}
+IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% group_by(mo) %>% summarise(AMC= resistance(AMC), AMP = resistance(AMP),CAZ=resistance(CAZ),CTX=resistance(CTX),CRO=resistance(CRO),CXM=resistance(CXM),FEP=resistance(FEP),CEC=resistance(CEC),TCY=resistance(TCY),GEN=resistance(GEN),SPT=resistance(SPT),CHL=resistance(CHL),CIP=resistance(CIP),SXT=resistance(SXT),NOR = resistance(NOR)) %>% tidyr::pivot_longer(-mo, names_to = "antibiotic") %>% ggplot(aes(x = mo,y = value,fill = antibiotic)) +geom_col(position = "dodge2")
+```
+### Comparison table(extensive and Intensive)-count and percentage , resistance to all antibiotics
+```{r, echo=FALSE}
+#IRENE_DATA_ANALYSIS_R %>% select(LPS,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% proportion_df(combine_SI = FALSE) %>% spread(key = interpretation,value = value) %>% kbl(caption = "Antibiotic Susceptability Intermediate and Resistance") %>%  kable_classic(full_width = F, html_font = "Cambria")
+
+
+#IRENE_DATA_ANALYSIS_R %>% select(LPS,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>%group_by(LPS) %>% proportion_df(translate_ab=FALSE,combine_SI = FALSE) %>% spread(key = antibiotic,value = value) %>% unnest()%>% kbl(caption = "Comparision of Livestock Production system with their resistant to all antibiotics") %>%  kable_classic(full_width = F, html_font = "Cambria")
+
+IRENE_DATA_ANALYSIS_R %>% select(LPS,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>%group_by(LPS) %>% proportion_df(translate_ab=FALSE,as_percent=FALSE,combine_SI = TRUE) %>% spread(key = antibiotic,value = value) %>% unnest()%>% kbl(caption = "Comparision of Livestock Production system with their resistant to all antibiotics") %>%  kable_classic(full_width = F, html_font = "Cambria")
+```
+### Multdrug Resistance Organisms MDR
+
+```{r,echo=FALSE}
+IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>% mdro()%>% freq() %>% kbl(caption = "Multdrug Resistance Organisms MDR") %>%  kable_classic(full_width = F, html_font = "Cambria")
+```
+
+```
