@@ -1,0 +1,422 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Irene-Data Analysis Progress},
+  pdfauthor={Mwaura Patrick},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+\title{Irene-Data Analysis Progress}
+\author{Mwaura Patrick}
+\date{2/1/2021}
+
+\begin{document}
+\maketitle
+
+\hypertarget{irene-data-analysis}{%
+\subsubsection{Irene Data Analysis}\label{irene-data-analysis}}
+
+This analysis is being done at the request of the researcher
+
+\hypertarget{summary-of-the-data}{%
+\subsubsection{Summary of the data}\label{summary-of-the-data}}
+
+View the summary of the data
+
+\hypertarget{number-of-camels-from-each-of-the-livestock-production-system}{%
+\subsubsection{Number of camels from each of the Livestock Production
+System}\label{number-of-camels-from-each-of-the-livestock-production-system}}
+
+With their Percentages and Bar Graph
+
+\begin{table}
+
+\caption{\label{tab:unnamed-chunk-3}Ranch vs Livestock production system With Percentages}
+\centering
+\begin{tabular}[t]{l|l|l|l}
+\hline
+Community & Extensive & Intensive & Total\\
+\hline
+Ilmotiok & 100\% (129) & 0\%   (0) & 43\% (129)\\
+\hline
+Loisaba Ranch & 0\%   (0) & 33\%  (57) & 19\%  (57)\\
+\hline
+Mpala Ranch & 0\%   (0) & 48\%  (83) & 27\%  (83)\\
+\hline
+Suyian Ranch & 0\%   (0) & 19\%  (33) & 11\%  (33)\\
+\hline
+Total & 100\% (129) & 100\% (173) & 100\% (302)\\
+\hline
+\end{tabular}
+\end{table}
+
+\includegraphics{Irene-Data-Analysis-Progress_files/figure-latex/unnamed-chunk-3-1.pdf}
+\#\#\# Counts and Percentages of E.coli Isolated from all the camels
+This table counts and percentages of E.coli isolates in
+Extensive/Intensive location/Livestock procuction system
+
+\begin{table}
+
+\caption{\label{tab:unnamed-chunk-4}E.coli recovered from each of the LPS}
+\centering
+\begin{tabular}[t]{l|l|l|l}
+\hline
+mo & Extensive & Intensive & Total\\
+\hline
+Escherichia coli & 42\% (54) & 47\% (82) & 45\% (136)\\
+\hline
+Others & 58\% (75) & 53\% (91) & 55\% (166)\\
+\hline
+\end{tabular}
+\end{table}
+
+\#\#\#Pie Chart The above table can be visualised as a pie chart
+\includegraphics{Irene-Data-Analysis-Progress_files/figure-latex/unnamed-chunk-5-1.pdf}
+\#\#\# Counts and percentages of the number of camels (female and male)
+from each livestock production system
+
+\begin{table}
+
+\caption{\label{tab:unnamed-chunk-6}Camels(Female and Male) from each of the LPS}
+\centering
+\begin{tabular}[t]{l|l|l}
+\hline
+Gender & Extensive & Intensive\\
+\hline
+Female & 48\% (106) & 52\% (113)\\
+\hline
+Male & 28\%  (23) & 72\%  (60)\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{verbatim}
+## 
+##  Pearson's Chi-squared test with Yates' continuity correction
+## 
+## data:  .
+## X-squared = 9.702, df = 1, p-value = 0.001841
+\end{verbatim}
+
+\hypertarget{the-count-and-percentages-of-resistanceintermediatesusceptible-e.coli-to-all-the-antibiotics}{%
+\subsubsection{The count and percentages of
+Resistance/Intermediate/Susceptible E.coli to all the
+antibiotics}\label{the-count-and-percentages-of-resistanceintermediatesusceptible-e.coli-to-all-the-antibiotics}}
+
+\begin{table}
+
+\caption{\label{tab:unnamed-chunk-7}Antibiotic Susceptability Intermediate and Resistance}
+\centering
+\begin{tabular}[t]{l|l|l|l}
+\hline
+antibiotic & S & I & R\\
+\hline
+Amoxicillin/clavulanic acid & 99\% & 1\% & 0\%\\
+\hline
+Ampicillin & 86\% & 5\% & 9\%\\
+\hline
+Cefaclor & 24\% & 48\% & 28\%\\
+\hline
+Cefepime & 75\% & 22\% & 3\%\\
+\hline
+Cefotaxime & 62\% & 22\% & 16\%\\
+\hline
+Ceftazidime & 70\% & 23\% & 7\%\\
+\hline
+Ceftriaxone & 90\% & 7\% & 3\%\\
+\hline
+Cefuroxime & 84\% & 12\% & 4\%\\
+\hline
+Chloramphenicol & 100\% & 0\% & 0\%\\
+\hline
+Ciprofloxacin & 61\% & 38\% & 1\%\\
+\hline
+Gentamicin & 91\% & 8\% & 1\%\\
+\hline
+Norfloxacin & 100\% & 0\% & 0\%\\
+\hline
+Spectinomycin & 90\% & 8\% & 2\%\\
+\hline
+Tetracycline & 93\% & 1\% & 5\%\\
+\hline
+Trimethoprim/sulfamethoxazole & 96\% & 1\% & 3\%\\
+\hline
+\end{tabular}
+\end{table}
+
+\hypertarget{beta-lactamspenicillins}{%
+\subsubsection{Beta-lactams/penicillins}\label{beta-lactamspenicillins}}
+
+Beta-lactam antibiotics are one of the most commonly prescribed drug
+classes with numerous clinical indications.
+
+From a biochemical point of view, these drugs have a common feature,
+which is the 3-carbon and 1-nitrogen ring (beta-lactam ring) that is
+highly reactive. This class includes:
+
+Penicillins,Cephalosporins,Carbapenems,Monobactams,Beta-lactamase
+inhibitors
+
+column `AMC' (amoxicillin/clavulanic acid), column `AMP' (ampicillin),
+column `OXA' (oxacillin), column `TEM' (temocillin) NOTE: No
+antimicrobial agents of class cephalosporins (1st gen.) found (such as
+cefacetrile, cephapirin). Selecting cephalosporins (2nd gen.): column
+`CEC' (cefaclor), column `CXM' (cefuroxime) NOTE: No antimicrobial
+agents of class carbapenems found (such as doripenem, imipenem).
+
+\begin{table}
+
+\caption{\label{tab:unnamed-chunk-8}
+Beta-lactams/penicillins}
+\centering
+\begin{tabular}[t]{l|l|l|l}
+\hline
+antibiotic & S & I & R\\
+\hline
+Ampicillin & 86\% (117) & 5\%  (7) & 9\% (12)\\
+\hline
+Cefaclor & 24\%  (33) & 48\% (65) & 28\% (38)\\
+\hline
+Cefepime & 75\% (102) & 22\% (30) & 3\%  (4)\\
+\hline
+Cefotaxime & 62\%  (84) & 22\% (30) & 16\% (22)\\
+\hline
+Ceftazidime & 70\%  (95) & 23\% (31) & 7\% (10)\\
+\hline
+Ceftriaxone & 90\% (123) & 7\%  (9) & 3\%  (4)\\
+\hline
+Cefuroxime & 84\% (114) & 12\% (17) & 4\%  (5)\\
+\hline
+\end{tabular}
+\end{table}
+
+\hypertarget{resisitance}{%
+\subsubsection{Resisitance}\label{resisitance}}
+
+\includegraphics{Irene-Data-Analysis-Progress_files/figure-latex/unnamed-chunk-9-1.pdf}
+\#\#\# Comparison table(extensive and Intensive)-count and percentage ,
+resistance to all antibiotics
+
+\begin{verbatim}
+##                    interpretation          S          I          R
+## LPS       variable                                                
+## Extensive AMC                     1.00000000 0.00000000 0.00000000
+##           AMP                     0.85185185 0.07407407 0.07407407
+##           CAZ                     0.59259259 0.31481481 0.09259259
+##           CEC                     0.22222222 0.44444444 0.33333333
+##           CHL                     1.00000000 0.00000000 0.00000000
+##           CIP                     0.64814815 0.35185185 0.00000000
+##           CRO                     0.92592593 0.05555556 0.01851852
+##           CTX                     0.59259259 0.24074074 0.16666667
+##           CXM                     0.85185185 0.12962963 0.01851852
+##           FEP                     0.75925926 0.22222222 0.01851852
+##           GEN                     0.88888889 0.09259259 0.01851852
+##           NOR                     1.00000000 0.00000000 0.00000000
+##           SPT                     0.92592593 0.05555556 0.01851852
+##           SXT                     0.98148148 0.00000000 0.01851852
+##           TCY                     0.98148148 0.01851852 0.00000000
+## Intensive AMC                     0.98780488 0.01219512 0.00000000
+##           AMP                     0.86585366 0.03658537 0.09756098
+##           CAZ                     0.76829268 0.17073171 0.06097561
+##           CEC                     0.25609756 0.50000000 0.24390244
+##           CHL                     1.00000000 0.00000000 0.00000000
+##           CIP                     0.58536585 0.39024390 0.02439024
+##           CRO                     0.89024390 0.07317073 0.03658537
+##           CTX                     0.63414634 0.20731707 0.15853659
+##           CXM                     0.82926829 0.12195122 0.04878049
+##           FEP                     0.74390244 0.21951220 0.03658537
+##           GEN                     0.92682927 0.07317073 0.00000000
+##           NOR                     1.00000000 0.00000000 0.00000000
+##           SPT                     0.87804878 0.09756098 0.02439024
+##           SXT                     0.95121951 0.01219512 0.03658537
+##           TCY                     0.90243902 0.01219512 0.08536585
+\end{verbatim}
+
+\hypertarget{multdrug-resistance-organisms-mdr}{%
+\subsubsection{Multdrug Resistance Organisms
+MDR}\label{multdrug-resistance-organisms-mdr}}
+
+\includegraphics{Irene-Data-Analysis-Progress_files/figure-latex/unnamed-chunk-11-1.pdf}
+
+\begin{table}
+\caption{\label{tab:unnamed-chunk-11}Multdrug Resistance Organisms MDR}
+\begin{table}
+
+\centering
+\begin{tabular}[t]{l}
+\hline
+x\\
+\hline
+. :\\
+\hline
+\end{tabular}
+\end{table}\begin{table}
+
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+  & Frequency & Percent\\
+\hline
+Negative & 296 & 98\\
+\hline
+Multi-drug-resistant (MDR) & 6 & 2\\
+\hline
+Extensively drug-resistant (XDR) & 0 & 0\\
+\hline
+Pandrug-resistant (PDR) & 0 & 0\\
+\hline
+Total & 302 & 100\\
+\hline
+\end{tabular}
+\end{table}
+\end{table}
+
+\hypertarget{antibiotic-profiling}{%
+\subsubsection{Antibiotic Profiling}\label{antibiotic-profiling}}
+
+\includegraphics{Irene-Data-Analysis-Progress_files/figure-latex/unnamed-chunk-12-1.pdf}
+
+\begin{table}
+\caption{\label{tab:unnamed-chunk-12}Profile of antibiotics}
+\begin{table}
+
+\centering
+\begin{tabular}[t]{l}
+\hline
+x\\
+\hline
+Profile\$antibiotics :\\
+\hline
+\end{tabular}
+\end{table}\begin{table}
+
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+  & Frequency & Percent\\
+\hline
+CEC & 22 & 37.3\\
+\hline
+CTX & 8 & 13.6\\
+\hline
+CAZ,CTX & 3 & 5.1\\
+\hline
+CAZ & 2 & 3.4\\
+\hline
+AMP,TCY & 2 & 3.4\\
+\hline
+AMP,CEC & 2 & 3.4\\
+\hline
+AMP & 2 & 3.4\\
+\hline
+TCY & 1 & 1.7\\
+\hline
+SPT & 1 & 1.7\\
+\hline
+FEP & 1 & 1.7\\
+\hline
+CXM & 1 & 1.7\\
+\hline
+CTX,CXM & 1 & 1.7\\
+\hline
+CTX,CEC,TCY,SPT,SXT & 1 & 1.7\\
+\hline
+CTX,CEC,CEC & 1 & 1.7\\
+\hline
+CTX,CEC & 1 & 1.7\\
+\hline
+CIP & 1 & 1.7\\
+\hline
+CEC,GEN & 1 & 1.7\\
+\hline
+CAZ,CTX,CRO & 1 & 1.7\\
+\hline
+CAZ,CEC & 1 & 1.7\\
+\hline
+AMP,CTX,CEC,CIP & 1 & 1.7\\
+\hline
+AMP,CTX,CEC,CEC & 1 & 1.7\\
+\hline
+AMP,CEC,TCY,SPT,SXT & 1 & 1.7\\
+\hline
+AMP,CAZ,CTX,CTX,CRO,CXM,FEP,CEC,CEC,TCY,TCY,SXT & 1 & 1.7\\
+\hline
+AMP,CAZ,CTX,CRO,CXM,FEP,CEC,SXT & 1 & 1.7\\
+\hline
+AMP,CAZ,CTX,CRO,CXM,FEP,CEC & 1 & 1.7\\
+\hline
+Total & 59 & 100.0\\
+\hline
+\end{tabular}
+\end{table}
+\end{table}
+
+\end{document}

@@ -1,0 +1,81 @@
+---
+title: "Irene Data analysis"
+author: "Mwaura Patrick"
+date: "1/27/2021"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```{r load relevant librararies}
+options( warn = -1 )
+library(tidyverse)
+library(dplyr)
+library(readxl)
+library(here)
+library(skimr)
+library(kableExtra)
+library(AMR)
+library(scales)
+library(pipeR)
+library(cleaner)
+```
+
+# Set the working directory and load the data
+
+```{r read file}
+setwd("E:/RESULTS/Mwaura/mwaura/WORK1/Covid19/Irene Work")
+IRENE_DATA_ANALYSIS_R <- read_csv("IRENE DATA ANALYSIS R.csv")
+```
+
+# Explore the data
+
+```{r view the data frame}
+#skimr::skim(IRENE_DATA_ANALYSIS_R)
+```
+# Brief summary
+```{r summaries of Micro-organisms}
+
+knitr::kable(IRENE_DATA_ANALYSIS_R %>% select(mo,CAMEL_ID_NUMBER) %>% group_by(mo) %>%  summarize(Count=n()) %>% mutate(Percentage=paste0(round(Count/sum(Count)*100,2),"%")),"pipe")
+
+knitr::kable(IRENE_DATA_ANALYSIS_R %>% freq(mo))
+
+IRENE_DATA_ANALYSIS_R %>% select(mo,CAMEL_ID_NUMBER) %>% group_by(mo) %>%  summarize(Count=n()) %>% mutate(Percentage=paste0(round(Count/sum(Count)*100,2),"%")) %>% ggplot(aes(x="", y=mo, fill=Percentage)) + geom_bar(stat="identity", width=1)+ coord_polar("y", start=0) +theme_classic()+labs( title = "Percentage of Particular Organism Detected")+scale_fill_manual(values=c("#55DDE0", "#33658A", "#2F4858", "#F6AE2D"))+theme(axis.line = element_blank(),axis.text = element_blank(),axis.ticks = element_blank(), plot.title = element_text(hjust = 0.5, color = "#666666"))+geom_text(aes(y = mo, label = mo), position = position_stack(vjust = .5),color = "white", size=3)
+```
+# Cross tabulation by Ranch_community vs the livestock production system
+```{r   Ranch or community representation of the production system}
+IRENE_DATA_ANALYSIS_R %>% select(Ranch_Community,Livestock_production_system) %>% pivot_wider(names_from = Livestock_production_system, values_from= Livestock_production_system,values_fn=list(Livestock_production_system=list))
+
+IRENE_DATA_ANALYSIS_R %>% select(Ranch_Community,Livestock_production_system) %>% ggplot(aes(x=Ranch_Community,fill=Livestock_production_system))+geom_bar()+ylab("Count of Camels")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .5),color="black")
+```
+# MDRO analysis
+```{r Mult_drug Resistant Organisms}
+IRENE_DATA_ANALYSIS_R %>% select(mo,Am) %>% mutate_at(vars(Amoxicillin_clavulanic_acid:Norfloxacin), as.rsi)%>% mdro()%>% freq()
+
+
+```
+# Resistance
+```{r Resistance of e.coli to various antibitics}
+knitr::kable(IRENE_DATA_ANALYSIS_R %>% select(mo,Amoxicillin_clavulanic_acid:Norfloxacin) %>% mutate_at(vars(Amoxicillin_clavulanic_acid:Norfloxacin), as.rsi) %>% group_by(mo) %>% summarise(amoxiclav = resistance(Amoxicillin_clavulanic_acid), Ampicillin = resistance(Ampicillin), Norflaxin = resistance(Norfloxacin)))
+
+IRENE_DATA_ANALYSIS_R %>% select(mo,Amoxicillin_clavulanic_acid:Norfloxacin) %>% mutate_at(vars(Amoxicillin_clavulanic_acid:Norfloxacin), as.rsi) %>% group_by(mo) %>% summarise(amoxiclav = resistance(Amoxicillin_clavulanic_acid), Ampicillin = resistance(Ampicillin), Norflaxin = resistance(Norfloxacin)) %>% tidyr::pivot_longer(-mo, names_to = "antibiotic") %>% ggplot(aes(x = mo,y = value,fill = antibiotic)) +geom_col(position = "dodge2")
+
+
+IRENE_DATA_ANALYSIS_R %>% select(mo,Amoxicillin_clavulanic_acid:Norfloxacin) %>% mutate_at(vars(Amoxicillin_clavulanic_acid:Norfloxacin), as.rsi) %>% group_by(mo) %>% summarise(amoxiclav = resistance(Amoxicillin_clavulanic_acid), Ampicillin = resistance(Ampicillin), Norflaxin = resistance(Norfloxacin)) %>% tidyr::pivot_longer(-mo, names_to = "antibiotic") %>%ggplot(mapping = aes(x = mo,y = value)) +geom_col() +labs(title = "Micro-organisms",subtitle = "Resistance to Antibiotics", x = "Organism",y = "Resistance Rates")
+
+```
+# Conduct principal component analysis (PCA) for AMR
+```{r}
+options(warn = -1)
+resistance_data<-IRENE_DATA_ANALYSIS_R %>% select(mo,Amoxicillin_clavulanic_acid:Norfloxacin) %>% mutate_at(vars(Amoxicillin_clavulanic_acid:Norfloxacin), as.rsi) %>% group_by(mo) %>% summarise_if(is.rsi, resistance) %>% select(mo,Amoxicillin_clavulanic_acid:Norfloxacin)
+
+
+knitr::kable(resistance_data)
+
+
+resistant_data_2<-data.frame(na.omit(resistance_data))
+
+knitr::kable(resistant_data_2)
+```
+

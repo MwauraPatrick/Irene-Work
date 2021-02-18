@@ -1,24 +1,16 @@
 ---
-title: "Irene-Data Analysis Progress"
+title: "Irene"
 author: "Mwaura Patrick"
-date: "2/1/2021"
-output:
-  html_document: default
-  pdf_document: default
-  word_document: 
-    fig_caption: yes
-    keep_md: yes
-  always_allow_html: false
+date: "2/8/2021"
+output: word_document
 ---
-
 ### Irene Data Analysis
 
 This analysis is being done at the request of the researcher
 
 ```{r ,echo=FALSE,message=FALSE}
 rm()
-
-
+options( warn = -1 )
 library(xml2)
 library(rvest)
 library(curl)
@@ -77,7 +69,7 @@ With their Percentages and Bar Graph
 ```{r, echo=FALSE}
 IRENE_DATA_ANALYSIS_R %>% tabyl(Community,LPS) %>% adorn_totals(c("row","col")) %>%adorn_percentages("col") %>%
   adorn_pct_formatting(digits = 0) %>%
-  adorn_ns() %>%   kbl(caption = "Ranch vs Livestock production system With Percentages") %>% kable_classic(full_width = F, html_font = "Cambria") 
+  adorn_ns() %>%   kbl(caption = "Ranch vs Livestock production system With Percentages") %>% kable_classic(full_width = F, font = "Cambria") 
 
 
 IRENE_DATA_ANALYSIS_R %>% select(Community,LPS) %>%  ggplot(aes(x=Community,fill=LPS))+geom_bar(color="black",fill="black")+ylab("Number of Camels")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .9),color="white")
@@ -88,7 +80,7 @@ This table counts and percentages of E.coli isolates in Extensive/Intensive loca
 ```{r,echo=FALSE}
 IRENE_DATA_ANALYSIS_R %>% tabyl(mo,LPS) %>%adorn_totals(c("col")) %>%  adorn_percentages("col") %>%
   adorn_pct_formatting(digits = 0) %>%
-  adorn_ns() %>%  kbl(caption = "E.coli recovered from each of the LPS") %>% kable_classic(full_width = F, html_font = "Cambria")
+  adorn_ns() %>%  kbl(caption = "E.coli recovered from each of the LPS") %>% kable_classic(full_width = F,font = "Cambria")
 ```
 
 ###Pie Chart
@@ -103,7 +95,7 @@ IRENE_DATA_ANALYSIS_R %>% select(mo,CAMEL_ID_NUMBER) %>% group_by(mo) %>%  dplyr
 tab<-IRENE_DATA_ANALYSIS_R %>% tabyl(Gender,LPS)  
 tab %>%  adorn_percentages("row") %>%
   adorn_pct_formatting(digits = 0) %>%
-  adorn_ns()  %>% kbl(caption = "Camels(Female and Male) from each of the LPS") %>% kable_classic(full_width = F, html_font = "Cambria")
+  adorn_ns()  %>% kbl(caption = "Camels(Female and Male) from each of the LPS") %>% kable_classic(full_width = F, font = "Cambria")
 tab%>%chisq.test() 
 
 ```
@@ -112,7 +104,7 @@ tab%>%chisq.test()
 
 ```{r,echo=FALSE}
 IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli") %>% select(AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% proportion_df(combine_SI = FALSE) %>% spread(key = interpretation,value = value) %>% adorn_percentages("row") %>%
-  adorn_pct_formatting(digits = 0)%>% kbl(caption = "Antibiotic Susceptability Intermediate and Resistance") %>%  kable_classic(full_width = F, html_font = "Cambria")
+  adorn_pct_formatting(digits = 0)%>% kbl(caption = "Antibiotic Susceptability Intermediate and Resistance") %>%  kable_classic(full_width = F,font = "Cambria")
 ```
 
 
@@ -133,7 +125,7 @@ NOTE: No antimicrobial agents of class carbapenems found (such as doripenem, imi
 IRENE_DATA_ANALYSIS_R %>%filter(mo=="Escherichia coli") %>%  select(AMP,AMP,CEC,FEP,CXM,CRO,CTX,CAZ)%>% mutate_at(vars(AMP:CAZ), as.rsi) %>% count_df(translate_ab = TRUE,combine_SI = FALSE) %>% spread(key =interpretation,value = value ) %>% adorn_percentages("row") %>%
     adorn_pct_formatting(digits = 0) %>%
     adorn_ns() %>%  kbl(caption = "
-Beta-lactams/penicillins") %>%  kable_classic(full_width = F, html_font = "Cambria")
+Beta-lactams/penicillins") %>%  kable_classic(full_width = F, font = "Cambria")
 ```
 ### Resisitance
 
@@ -163,7 +155,7 @@ structable(anti1)
 
 ```{r,echo=FALSE}
 #IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>% mdro()%>% freq() %>%  kbl(caption = "Multdrug Resistance Organisms MDR") %>%  kable_classic(full_width = F, html_font = "Cambria")
-IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>% mdro()%>% tab1( col=c("black","white"),cum.percent = FALSE) %>%  kbl(caption = "Multdrug Resistance Organisms MDR") %>%  kable_classic(full_width = F, html_font = "Cambria")
+IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>% mdro()%>% tab1( col=c("black","white"),cum.percent = FALSE) %>%  kbl(caption = "Multdrug Resistance Organisms MDR") %>%  kable_classic(full_width = F, font = "Cambria")
 
 ```
 
@@ -179,6 +171,6 @@ prof<-IRENE_DATA_ANALYSIS_R %>%filter(mo=="Escherichia coli") %>%  select(ISOLAT
 Profile<-plyr:: ddply(prof, .(ISOLATE_ID), summarize,  antibiotics=paste(variable,collapse=",")) 
 
 Profile2<-tab1(Profile$antibiotics, sort.group = "decreasing",col=c("black","white"), cum.percent = FALSE,main ="Profile of antibiotics",cex.names = 0.7,cex=0.5,,cex.main=1,cex.axis=0.7,cex.lab=0.7 )
-Profile2 %>% kbl(caption = "Profile of antibiotics") %>% kable_classic(full_width = F, html_font = "Cambria")
+Profile2 %>% kbl(caption = "Profile of antibiotics") %>% kable_classic(full_width = F, font = "Cambria")
 
 #prof2<-prof1 %>% summarytools::freq(prof1$antibiotics,order = "freq",cumul=FALSE,report.nas = FALSE)

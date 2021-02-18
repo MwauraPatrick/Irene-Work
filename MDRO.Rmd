@@ -1,0 +1,126 @@
+---
+title: "MDRO"
+author: "Mwaura Patrick"
+date: "1/27/2021"
+output:
+  html_document: default
+  word_document: default
+---
+
+title: "Irene Data analysis"
+author: "Mwaura Patrick"
+date: "1/27/2021"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```{r load relevant librararies,echo=FALSE, message=FALSE,warning=FALSE}
+options( warn = -1 )
+library(tidyverse)
+library(dplyr)
+library(readxl)
+library(here)
+library(skimr)
+library(kableExtra)
+library(AMR)
+library(scales)
+library(pipeR)
+library(cleaner)
+library(htmlTable)
+library(data.table)
+library(janitor)
+```
+
+# Set the working directory and load the data
+
+```{r read file ,echo=FALSE}
+setwd("E:/RESULTS/Mwaura/mwaura/WORK1/Covid19/Irene Work")
+IRENE_DATA_ANALYSIS_R <- read_csv("IRENE DATA ANALYSIS R.csv")
+```
+
+# Explore the data
+
+```{r view the data frame,echo=FALSE}
+#skimr::skim(IRENE_DATA_ANALYSIS_R)
+```
+# Brief summary
+```{r summaries of Micro-organisms,echo=FALSE}
+IRENE_DATA_ANALYSIS_R %>% select(mo,CAMEL_ID_NUMBER) %>% group_by(mo) %>%  summarize(Count=n()) %>% mutate(Percentage=paste0(round(Count/sum(Count)*100,2),"%")) %>% kbl(caption = "Proportion of Each Categories of Organisms") %>% kable_classic(full_width = F, html_font = "Cambria")
+
+#IRENE_DATA_ANALYSIS_R %>% freq(mo) %>%
+ # kbl(caption = "Proportion of Each Categories of Organisms") %>%
+ # kable_classic(full_width = F, html_font = "Cambria")
+
+#IRENE_DATA_ANALYSIS_R %>% select( ISOLATE_ID, Gender,mo) %>% pivot_wider(names_from = mo, values_from=ISOLATE_ID,values_fn=list(ISOLATE_ID=list))
+
+IRENE_DATA_ANALYSIS_R %>% tabyl(Gender,mo) %>%adorn_percentages("row") %>%
+  adorn_pct_formatting(digits = 2) %>%
+  adorn_ns() %>%  kbl(caption = "Gender vs Organisms With Percentages") %>% kable_classic(full_width = F, html_font = "Cambria")
+```
+
+
+```{r summaries of Micro-organisms,echo=FALSE}
+IRENE_DATA_ANALYSIS_R %>% select(mo,CAMEL_ID_NUMBER) %>% group_by(mo) %>%  summarize(Count=n()) %>% mutate(Percentage=paste0(round(Count/sum(Count)*100,2),"%")) %>% ggplot(aes(x="", y=mo, fill=Percentage)) + geom_bar(stat="identity", width=1)+ coord_polar("y", start=0) +theme_classic()+labs( title = "Percentage of Particular Organism Detected")+scale_fill_manual(values=c("#55DDE0", "#33658A", "#2F4858", "#F6AE2D"))+theme(axis.line = element_blank(),axis.text = element_blank(),axis.ticks = element_blank(), plot.title = element_text(hjust = 0.5, color = "#666666"))+geom_text(aes(y = mo, label = mo), position = position_stack(vjust = .5),color = "white", size=3)
+```
+
+
+```{r summaries of Micro-organisms,echo=FALSE}
+```
+# Cross tabulation by Ranch_community vs the livestock production system
+LPS-lIVESTOCK PRODUCTION SYSTEM
+```{r   Ranch or community representation of the production system, echo=FALSE}
+#IRENE_DATA_ANALYSIS_R %>% select(  Community,LPS) %>% pivot_wider(names_from = LPS, values_from= LPS,values_fn=list(LPS=list))
+IRENE_DATA_ANALYSIS_R %>% tabyl(Community,LPS) %>%adorn_percentages("col") %>%
+  adorn_pct_formatting(digits = 2) %>%
+  adorn_ns() %>%  kbl(caption = "Ranch va Livestock production system With Percentages") %>% kable_classic(full_width = F, html_font = "Cambria")
+
+#IRENE_DATA_ANALYSIS_R %>% select( ISOLATE_ID, Community,LPS) %>% group_by(ISOLATE_ID,Community)
+
+IRENE_DATA_ANALYSIS_R %>% select(Community,LPS) %>%  ggplot(aes(x=Community,fill=LPS))+geom_bar()+ylab("Count of Camels")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .5),color="black")
+```
+# MDRO analysis
+```{r Mult_drug Resistant Organisms ,echo=FALSE,message=FALSE,warning=FALSE}
+IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>% mdro()%>% freq() %>% kbl(caption = "MDR") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+
+
+```
+# Resistance
+Amoxicillin/clavulanic acid	AMC
+Ampicillin 	AMP.Ceftazidime	CAZ.Cefotaxime	CTX.Ceftriaxone	CRO.Cefuroxime	CXM.Cefepime	FEP.Cefaclor	CEC.Tetracycline	TCY.Gentamicin	GEN.Spectinomycin	SPT.Chloramphenicol	CHL.Ciprofloxacin	CIP.Trimethoprim/sulfamethoxazole	SXT.Norfloxacin	NOR
+
+```{r Resistance of e.coli to various antibitics,echo=FALSE,warning=FALSE}
+IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% group_by(mo) %>% summarise(AMC= resistance(AMC), AMP = resistance(AMP),CAZ=resistance(CAZ),CTX=resistance(CTX),CRO=resistance(CRO),CXM=resistance(CXM),FEP=resistance(FEP),CEC=resistance(CEC),TCY=resistance(TCY),GEN=resistance(GEN),SPT=resistance(SPT),CHL=resistance(CHL),CIP=resistance(CIP),SXT=resistance(SXT),NOR = resistance(NOR))%>% kbl(caption = "MDR") %>%
+  kable_classic(full_width = F, html_font = "Cambria",font_size =9)
+
+IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% group_by(mo) %>% summarise(AMC= resistance(AMC), AMP = resistance(AMP),CAZ=resistance(CAZ),CTX=resistance(CTX),CRO=resistance(CRO),CXM=resistance(CXM),FEP=resistance(FEP),CEC=resistance(CEC),TCY=resistance(TCY),GEN=resistance(GEN),SPT=resistance(SPT),CHL=resistance(CHL),CIP=resistance(CIP),SXT=resistance(SXT),NOR = resistance(NOR)) %>% tidyr::pivot_longer(-mo, names_to = "antibiotic") %>% ggplot(aes(x = mo,y = value,fill = antibiotic)) +geom_col(position = "dodge2")
+
+
+#IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% group_by(mo) %>% summarise(AMC= resistance(AMC), AMP = resistance(AMP),CAZ=resistance(CAZ),CTX=resistance(CTX),CRO=resistance(CRO),CXM=resistance(CXM),FEP=resistance(FEP),CEC=resistance(CEC),TCY=resistance(TCY),GEN=resistance(GEN),SPT=resistance(SPT),CHL=resistance(CHL),CIP=resistance(CIP),TrSXT=resistance(SXT),NOR = resistance(NOR)) %>% tidyr::pivot_longer(-mo, names_to = "antibiotic") %>%ggplot(mapping = aes(x = mo,y = value)) +geom_col() +labs(title = "Micro-organisms",subtitle = "Resistance to Antibiotics", x = "Organism",y = "Resistance Rates")
+
+```
+# Conduct principal component analysis (PCA) for AMR
+```{r, echo=FALSE}
+options(warn = -1)
+#IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli") %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% group_by(mo) %>% count_df(combine_SI = FALSE) %>% kbl(caption = "Antibiotic Susceptability and Resistance") %>%  kable_classic(full_width = F, html_font = "Cambria") 
+
+IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli") %>% select(AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% proportion_df(combine_SI = FALSE) %>% spread(key = interpretation,value = value) %>% kbl(caption = "Antibiotic Susceptability Intermediate and Resistance") %>%  kable_classic(full_width = F, html_font = "Cambria")
+
+
+#profile<-IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli") %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% group_by(mo) %>% count_df(combine_SI = FALSE)
+
+#profile %>%group_by(antibiotic) %>% spread(interpratation,value) %>% kbl(caption = "Antibiotic Susceptability and Resistance") %>%  kable_classic(full_width = F, html_font = "Cambria") 
+     #resistance_data<-IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% group_by(mo) %>% summarise_if(is.rsi, resistance) %>% select(mo,AMC:NOR)
+
+#resistance_data %>%kbl(caption = "MDR") %>%
+#  kable_classic(full_width = F, html_font = "Cambria",font_size =9)
+
+
+#resistant_data_2<-data.frame(na.omit(resistance_data))
+
+#resistant_data_2%>% kbl(caption = "MDR") %>%
+#(full_width = F, html_font = "Cambria",font_size =9 )
+```
+

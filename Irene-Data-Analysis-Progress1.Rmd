@@ -1,0 +1,355 @@
+---
+title: "Irene Data Analysis Progress"
+author: "Mwaura Patrick"
+date: "2/8/2021"
+output: word_document
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setupr ,echo=FALSE,message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+rm()
+library(xml2)
+library(rvest)
+library(curl)
+library(testthat)
+library(pillar)
+library(clipr)
+library(officer)
+library(rmarkdown)
+library(conflicted)
+library(tidyr)
+library(tidyverse)
+library(dplyr)
+conflict_prefer("filter", "dplyr")
+conflict_prefer("mutate", "dplyr")
+library(readxl)
+library(here)
+library(plyr)
+conflict_prefer("summarize", "plyr")
+conflict_prefer("summarise", "dplyr")
+library(skimr)
+library(kableExtra)
+library(AMR)
+library(scales)
+library(pipeR)
+library(cleaner)
+library(htmlTable)
+library(data.table)
+library(janitor)
+library(reshape)
+library(reshape2)
+conflict_prefer("melt", "reshape2")
+library(summarytools)
+conflict_prefer("freq", "cleaner")
+library(magrittr)
+library(epiDisplay)
+conflict_prefer("select", "dplyr")
+conflict_prefer("view", "tibble")
+library(vcdExtra)
+library(formattable)
+library(gt)
+conflict_prefer("chisq.test", "janitor")
+library(flextable)
+library(huxtable)
+conflict_prefer("rename", "dplyr")
+conflict_prefer("fmt_percent","huxtable")
+setwd("E:/RESULTS/Mwaura/mwaura/WORK1/Covid19/Irene Work")
+IRENE_DATA_ANALYSIS_R <- fread("IRENE DATA ANALYSIS R.csv")
+```
+
+
+## Summary of the data
+
+View the summary of the data
+```{r r setupr ,echo=FALSE,message=FALSE}
+#skimr::skim(IRENE_DATA_ANALYSIS_R) %>% flextable() 
+#glimpse(IRENE_DATA_ANALYSIS_R)
+
+```
+
+
+## Number of camels from each of the Livestock Production System 
+With their Percentages and Bar Graph
+
+H0: There is no association/relationship between community/ranch and the livestock production system
+H1: There is an association / relationship between community/ranch and livestock production system
+
+
+Reject the null hypothesis
+```{r, echo=FALSE}
+comm<-IRENE_DATA_ANALYSIS_R %>% tabyl(Community,LPS) 
+
+comm %>% adorn_totals(c("row","col")) %>%adorn_percentages("col") %>%
+  adorn_pct_formatting(digits = 0) %>%
+  adorn_ns() %>% flextable()%>% theme_zebra() %>% border(border=fp_border(color = "black"),part = "all") %>% add_header_lines(values="Ranch vs Livestock production system With Percentages") %>% fontsize(i=1,size=14,part="header")
+
+comm%>%chisq.test() 
+janitor::fisher.test(comm)
+
+#IRENE_DATA_ANALYSIS_R %>% select(Community,LPS) %>%  ggplot(aes(x=Community,fill=LPS))+geom_bar(color="blue",fill="blue")+ylab("Number of Camels")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .9),color="white")
+
+IRENE_DATA_ANALYSIS_R %>% select(Community,LPS) %>%  ggplot(aes(x=Community,fill=LPS))+geom_bar()+ylab("Number of Camels")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .9),color="black")
+
+```
+
+
+
+## Counts and Percentages of E.coli Isolated from all the camels
+This table counts and percentages of E.coli isolates in Extensive/Intensive location/Livestock procuction system
+
+H0: There is no association/relationship between micro organism and the livestock production system
+H1: There is an association / relationship between micro organism and livestock production system
+
+
+Reject the null hypothesis
+
+
+
+```{r,echo=FALSE}
+mo<-IRENE_DATA_ANALYSIS_R %>% tabyl(mo,LPS) 
+
+mo %>% adorn_totals(c("row","col")) %>%  adorn_percentages("col") %>%
+  adorn_pct_formatting(digits = 0) %>%
+  adorn_ns() %>%  flextable()%>% theme_zebra() %>% border(border=fp_border(color = "black"),part = "all")%>% border(part = "all")%>% add_header_lines(values="E.coli recovered from each of the LPS") %>% fontsize(i=1,size=14,part="header") 
+
+mo%>%chisq.test() 
+janitor::fisher.test(mo)
+```
+
+
+
+## Pie Chart
+The above table can be visualised as a pie chart
+```{r,echo=FALSE}
+IRENE_DATA_ANALYSIS_R %>% select(mo,CAMEL_ID_NUMBER) %>% group_by(mo) %>%  dplyr::summarise(n = n()) %>% mutate(Percentage=paste0(round(n/sum(n)*100,0),"%")) %>% ggplot(aes(x="", y=mo, fill=Percentage)) + geom_bar(stat="identity", width=1)+ coord_polar("y" ,start=0) +theme_classic()+labs( title = "Percentage of E.coli  Detected")+scale_fill_manual(values=c( "#33658A", "#F6AE2D"))+theme(axis.line = element_blank(),axis.text = element_blank(),axis.ticks = element_blank(), plot.title = element_text(hjust = 0.5, color = "black"))+geom_text(aes(y = mo,label="E.coli"), position = position_stack(vjust = .5),color = "#F6AE2D", size=4)
+```
+
+## Counts and percentages of the number of camels (female and male) from each livestock production system
+
+H0: There is no association/relationship between gender and the livestock production system
+H1: There is an association / relationship between gender and livestock production system
+
+Reject the Null hypothesis:There is a significant relationship between Gender and Livestock production system. Therefore, knowing the value of one  may help to give vital information about the other
+.
+```{r,echo=FALSE}
+tab<-IRENE_DATA_ANALYSIS_R %>% tabyl(Gender,LPS)  
+tab %>% adorn_totals(c("row","col"))%>%  adorn_percentages("row") %>%
+  adorn_pct_formatting(digits = 0) %>%
+  adorn_ns()  %>% flextable()%>% theme_zebra() %>% border(border=fp_border(color = "black"),part = "all")%>% border(part = "all") %>% add_header_lines(values="Camels(Female and Male) from each of the LPS") %>% fontsize(i=1,size=14,part="header")
+
+
+IRENE_DATA_ANALYSIS_R %>% tabyl(Gender,LPS)%>%chisq.test() 
+IRENE_DATA_ANALYSIS_R %>% tabyl(Gender,LPS) %>% janitor::fisher.test()
+
+```
+
+
+## The count and percentages of  Resistance/Intermediate/Susceptible E.coli to all the antibiotics
+
+```{r,echo=FALSE}
+IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli") %>% select(AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% count_df(translate_ab = TRUE,combine_SI = FALSE) %>% spread(key = interpretation,value = value) %>% adorn_percentages("row") %>%
+  adorn_pct_formatting(digits = 0)%>%
+    adorn_ns()%>% flextable()%>% theme_zebra() %>% border(border=fp_border(color = "black"),part = "all")%>% add_header_lines(values="Antibiotic Susceptibility  Intermediate and Resistance") %>% fontsize(i=1,size=14,part="header")
+```
+
+## Bug Drug Combination and grouping where possible
+
+```{r,echo=FALSE}
+IRENE_DATA_ANALYSIS_R%>% select(mo,AMC:NOR) %>% filter(mo=="Escherichia coli") %>% mutate_at(vars(AMC:NOR), as.rsi) %>% bug_drug_combinations(FUN = mo_gramstain) %>% format(col_mo=NULL,language=get_locale(),translate_ab="name(ab,atc)",add_ab_group=TRUE) %>% flextable()%>% theme_zebra() %>% border(border=fp_border(color = "black"),part = "all")%>% add_header_lines(values="Antibiotics Combination") %>% fontsize(i=1,size=14,part="header")
+                                                                                                                    
+                                                                                              
+```
+
+
+## Beta-lactams/Penicillins
+Beta-lactam antibiotics are one of the most commonly prescribed drug classes with numerous clinical indications.
+
+From a biochemical point of view, these drugs have a common feature, which is the 3-carbon and 1-nitrogen ring (beta-lactam ring) that is highly reactive. This class includes:
+
+Penicillins,Cephalosporins,Carbapenems,Monobactams,Beta-lactamase inhibitors
+
+column 'AMC' (amoxicillin/clavulanic acid), column 'AMP'
+                                    (ampicillin), column 'OXA' (oxacillin), column 'TEM' (temocillin)
+NOTE: No antimicrobial agents of class cephalosporins (1st gen.) found (such as cefacetrile,
+      cephapirin).
+      Selecting cephalosporins (2nd gen.): column 'CEC' (cefaclor), column 'CXM' (cefuroxime)
+NOTE: No antimicrobial agents of class carbapenems found (such as doripenem, imipenem).
+```{r,echo=FALSE}
+IRENE_DATA_ANALYSIS_R %>%filter(mo=="Escherichia coli") %>%  select(AMP,AMP,CEC,FEP,CXM,CRO,CTX,CAZ)%>% mutate_at(vars(AMP:CAZ), as.rsi) %>% count_df(translate_ab = TRUE,combine_SI = FALSE) %>% spread(key =interpretation,value = value ) %>% adorn_percentages("row") %>%
+    adorn_pct_formatting(digits = 0) %>%
+    adorn_ns() %>%  flextable()%>% theme_zebra() %>% border(border=fp_border(color = "black"),part = "all")%>% add_header_lines(values="Beta-lactams Antibiotic Susceptibility Intermediate and Resistance") %>% fontsize(i=1,size=14,part="header")
+
+```
+
+
+## Resistance
+
+```{r,echo=FALSE, warning=FALSE}
+
+#theme_set(
+  #theme_minimal() +
+  #  theme(legend.position = "right")
+ # )
+
+#IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% group_by(mo)%>%filter(mo=="Escherichia coli") %>% summarise(AMC= resistance(AMC), AMP = resistance(AMP),CAZ=resistance(CAZ),CTX=resistance(CTX),CRO=resistance(CRO),CXM=resistance(CXM),FEP=resistance(FEP),CEC=resistance(CEC),TCY=resistance(TCY),GEN=resistance(GEN),SPT=resistance(SPT),CHL=resistance(CHL),CIP=resistance(CIP),SXT=resistance(SXT),NOR = resistance(NOR)) %>% tidyr::pivot_longer(-mo, names_to = "antibiotic") %>% huxtable() %>% set_number_format(row=1:16,col="value",fmt_percent(2)) %>%huxtable::as_flextable()%>% theme_vanilla() %>% border%>% add_header_lines(values="E.coli Percentate resistance to individual Antibiotics")%>% border(border=fp_border(color = "black"),part = "all") %>% fontsize(i=1,size=14,part="header")
+
+#IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% group_by(mo)%>%filter(mo=="Escherichia coli") %>% summarise(AMC= resistance(AMC), AMP = resistance(AMP),CAZ=resistance(CAZ),CTX=resistance(CTX),CRO=resistance(CRO),CXM=resistance(CXM),FEP=resistance(FEP),CEC=resistance(CEC),TCY=resistance(TCY),GEN=resistance(GEN),SPT=resistance(SPT),CHL=resistance(CHL),CIP=resistance(CIP),SXT=resistance(SXT),NOR = resistance(NOR)) %>% tidyr::pivot_longer(-mo, names_to = "antibiotic") %>% ggplot(aes(x = mo,y = value,fill = antibiotic)) +geom_col(position = "dodge2")#+ scale_fill_grey(start = 0, end = 0.5) 
+
+#IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% group_by(mo)%>%filter(mo=="Escherichia coli") %>% summarise(AMC= resistance(AMC), AMP = resistance(AMP),CAZ=resistance(CAZ),CTX=resistance(CTX),CRO=resistance(CRO),CXM=resistance(CXM),FEP=resistance(FEP),CEC=resistance(CEC),TCY=resistance(TCY),GEN=resistance(GEN),SPT=resistance(SPT),CHL=resistance(CHL),CIP=resistance(CIP),SXT=resistance(SXT),NOR = resistance(NOR)) %>% tidyr::pivot_longer(-mo, names_to = "antibiotic") %>% gt() %>% gt::fmt_percent(columns = 3,decimals = 2) %>% write.csv("E:/RESULTS/Mwaura/mwaura/WORK1/Covid19/Irene Work\\Resistance.csv", row.names = FALSE)
+#Resistance<-read.csv("Resistance.csv")
+#Resistance %>% ggplot(aes(x = mo,y = Percentage,fill = Antibiotics)) +geom_col(position = "dodge2")#+ scale_fill_grey(start = 0, end = 0.5) 
+
+#IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli") %>% select(AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% ggplot_rsi(position= "dodge",datalabels=FALSE,x.title="Antimicrobial",y.title="Proportion",colours=c(S="#61a8ff",R="#ff6961",I="black"),combine_SI=FALSE,translate_ab=FALSE,title="Relative comparison of Resistance against Susceptability and Intermediate combined")+geom_rsi(translate_ab = FALSE) + scale_y_percent(breaks = 0:4*25)+theme_rsi()+labels_rsi_count(position = NULL,translate_ab = FALSE,datalabels.size = 3,datalabels.colour = "black")+coord_flip()+labs(subtitle = "N=123")
+
+IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli") %>% select(AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% ggplot_rsi(translate_ab=FALSE,combine_SI = FALSE,combine_IR = FALSE,title = "Plot for R,S and I",caption = "To get the percentages, please consider the tables provided")+geom_rsi(translate_ab = FALSE,combine_SI = FALSE) + scale_y_percent(breaks = 0:4*25)+theme_rsi()+labels_rsi_count(position = NULL,translate_ab = FALSE,combine_SI = FALSE,    datalabels.colour = "black")+coord_flip(expand = TRUE)+labs(subtitle = "n=123")+theme(legend.position = "bottom")
+
+```
+
+
+
+## Comparison table(extensive and Intensive)- percentage , resistance to all antibiotics
+
+```{r echo=FALSE, warning=FALSE}
+#IRENE_DATA_ANALYSIS_R %>% select(LPS,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% proportion_df(combine_SI = FALSE) %>% spread(key = interpretation,value = value) %>% kbl(caption = "Antibiotic Susceptability Intermediate and Resistance") %>%  kable_classic(full_width = F, html_font = "Cambria")
+
+
+#IRENE_DATA_ANALYSIS_R %>% select(LPS,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>%group_by(LPS) %>% proportion_df(translate_ab=FALSE,combine_SI = FALSE) %>% spread(key = antibiotic,value = value) %>% unnest()%>% kbl(caption = "Comparision of Livestock Production system with their resistant to all antibiotics") %>%  kable_classic(full_width = F, html_font = "Cambria")
+
+#IRENE_DATA_ANALYSIS_R %>% select(LPS,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>%group_by(LPS) %>% proportion_df(translate_ab=FALSE,as_percent=FALSE,combine_SI = TRUE) %>% spread(key = antibiotic,value = value) %>% unnest()%>%  adorn_percentages("row") %>% adorn_pct_formatting(digits = 0)%>% kbl(caption = "Comparision of Livestock Production system with their resistant to all antibiotics") %>%  kable_classic(full_width = F, html_font = "Cambria")
+
+#anti<-IRENE_DATA_ANALYSIS_R %>% select(LPS,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>%group_by(LPS) %>% proportion_df(translate_ab=FALSE,combine_SI = FALSE,as_percent = FALSE) %>% spread(key = antibiotic,value = value) %>% melt(id.vars=c("LPS","interpretation"),measure.vars=c("AMC","AMP","CAZ","CEC","CHL","CIP","CRO","CTX","CXM","FEP","GEN","NOR","SPT","SXT","TCY"))
+
+#struct<-IRENE_DATA_ANALYSIS_R %>% select(LPS,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>%group_by(LPS) %>% proportion_df(translate_ab=FALSE,combine_SI = FALSE)  %>% spread(key = antibiotic,value = value) %>% melt(id.vars=c("LPS","interpretation"),measure.vars=c("AMC","AMP","CAZ","CEC","CHL","CIP","CRO","CTX","CXM","FEP","GEN","NOR","SPT","SXT","TCY")) %>% gt() %>% gt::fmt_percent(columns = 4,decimals = 2)
+
+#write.csv(struct,"E:/RESULTS/Mwaura/mwaura/WORK1/Covid19/Irene Work\\struct.csv", row.names = FALSE)
+
+#struct<-xtabs(value~LPS+interpretation+variable,data =struct )
+
+#struct %>% as.data.table() %>% dplyr::arrange(LPS) %>% spread(key = interpretation,value = value) %>% as_grouped_data(groups = c("LPS")) %>% flextable::as_flextable()  %>% theme_vanilla() %>% border%>% add_header_lines(values="Comparison table(Extensive and Intensive) Percentages , Resistance to all antibiotics")%>% border(border=fp_border(color = "black"),part = "all") %>% fontsize(i=1,size=14,part="header") 
+#LPS<-structable(struct)
+#LPS
+struct<-read.csv("struct.csv")
+
+lps<-struct %>% as.data.table() %>% dplyr::arrange(LPS) %>% spread(key = interpretation,value = value)
+
+Ext<-lps[1:15,] %>% select(-Group)  %>% as_grouped_data(groups = c("LPS"))  
+colnames(Ext) <- c("LPS_Ext","AB","I.Ext","R.Ext","S.Ext")
+Ext1<-Ext %>% select("AB","I.Ext","R.Ext","S.Ext") %>% na.omit()
+
+
+GP<-lps[1:15,2]
+colnames(GP)<-c("AB_Group")
+
+
+Int<-lps[16:30,]%>% select(-Group)%>%  as_grouped_data(groups = c("LPS"))
+colnames(Int) <- c("LPS_Int","A.Int","I.Int","R.Int","S.Int") 
+Int1<-Int %>% select(I.Int,R.Int,S.Int) %>% na.omit()
+
+cbind(GP,Ext1,Int1) %>%  huxtable() %>% huxtable::as_flextable() %>% merge_v(j="AB_Group")%>% theme_zebra() %>% border %>% add_header_lines(values="Comparison table(Extensive and Intensive) Percentages , Resistance to all antibiotics")%>% border(border=fp_border(color = "black"),part = "all") %>% fontsize(i=1,size=14,part="header") 
+
+
+
+```
+## Multidrug Resistance Organisms MDR
+
+#### Please explain the two tables and what the difference mean to the study.
+The main varaition is the minimal required percentage of the antimicrobial classes that must be available per isolate , rounded down . For example , at 50%, how many antibmicrobial classes must be available and hence the graphs i have presented are at 0% and 100% respectively , please guide on this and what percentage I should input.
+
+
+#### Please also be aware i am following MDRO guidline as perthe publication by Magiorakos et al.
+
+Negative	(Resistant to atmost tow(2) antibiotic)
+Multi-drug-resistant (MDR)
+Extensively drug-resistant (XDR)	
+Pandrug-resistant (PDR)	
+
+```{r, warning=FALSE,echo=FALSE}
+#IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>% mdro()%>% freq() %>%  kbl(caption = "Multdrug Resistance Organisms MDR") %>%  kable_classic(full_width = F, html_font = "Cambria")
+IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>% mdro(verbose = FALSE,only_rsi_columns=TRUE,pct_required_classes = 0.0,info = interactive(),combine_SI = TRUE,col_mo = NULL)%>% tab1( col=c("green","blue"),cum.percent = FALSE,main ="Multidrug Resistance bar graph",cex.names = 0.7,cex=0.6,cex.main=1,cex.axis=0.8,horiz = TRUE,cex.lab=0.7 ) 
+
+#IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>% mdro(verbose = FALSE,only_rsi_columns=FALSE,pct_required_classes = 1,info = interactive(),combine_SI = TRUE,col_mo = NULL)%>% tab1( col=c("green","blue"),cum.percent = FALSE,main ="Multidrug Resistance bar graph",cex.names = 0.7,cex=0.6,cex.main=1,cex.axis=0.8,cex.lab=0.7 )
+
+#IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>% mdro() %>% freq() %>% select(item,count,percent) %>% huxtable()%>% set_number_format(row=1:3,col="percent",fmt_percent(1)) %>%  huxtable::as_flextable()   %>% theme_vanilla()%>% theme_vanilla() %>% border(border=fp_border(color = "black"),part = "all")%>% add_header_lines(values="Multidrug Resistance Organisms MDR") %>% fontsize(i=1,size=14,part="header")
+```
+
+
+## Antibiotic Profiling
+
+```{r ,echo=FALSE, warning=FALSE}
+#par(mar=rep(2,4))
+#IRENE_DATA_ANALYSIS_R %>%filter(mo=="Escherichia coli") %>%  select(ISOLATE_ID,AMC:NOR)%>% mutate_at(vars(AMC:NOR), as.rsi)
+#IRENE_DATA_ANALYSIS_R %>%filter(mo=="Escherichia coli") %>%  select(ISOLATE_ID,AMC:NOR)%>% mutate_at(vars(AMC:NOR), as.rsi) %>% melt(id="ISOLATE_ID") %>% filter(value=="R") 
+
+prof<-IRENE_DATA_ANALYSIS_R %>%filter(mo=="Escherichia coli") %>%  select(ISOLATE_ID,AMC:NOR)%>% mutate_at(vars(AMC:NOR), as.rsi) %>% melt(id="ISOLATE_ID") %>% filter(value=="R") 
+
+Profile<-plyr:: ddply(prof, .(ISOLATE_ID), summarize,  antibiotics=paste(variable,collapse=",")) 
+
+Profile2<-tab1(Profile$antibiotics, sort.group = "decreasing",col=c("#33658A", "#F6AE2D"), cum.percent = FALSE,main ="Profile of antibiotics",cex.names = 0.7,cex=0.5,cex.main=1,cex.axis=0.7,cex.lab=0.7 )
+#write.csv(Profile2,"E:/RESULTS/Mwaura/mwaura/WORK1/Covid19/Irene Work\\profile3.csv", row.names = FALSE)
+
+Profile3<-read.csv("profile3.csv")
+Profile3 %>%flextable() %>%   theme_zebra() %>%  add_header_lines(values="Antibiotics Profiles with number of isolates Resistants ")%>% border(border=fp_border(color = "black"),part = "all") %>% fontsize(i=1,size=14,part="header") 
+#prof2<-prof1 %>% summarytools::freq(prof1$antibiotics,order = "freq",cumul=FALSE,report.nas = FALSE)
+```
+
+
+###  GENE ProfileS
+```{r ,echo=FALSE, warning=FALSE}
+Tem<-IRENE_DATA_ANALYSIS_R %>%filter(mo=="Escherichia coli") %>%  select(TEM,AMC:NOR)%>% mutate_at(vars(AMC:NOR), as.rsi) %>% melt(id="TEM") %>% filter(value=="R") %>% filter(TEM!="NEG") 
+Tem1<-plyr:: ddply(Tem, .(TEM), summarize,  antibiotics=paste(variable,collapse=",")) 
+
+Tem1$antibiotics<- sapply(Tem1$antibiotics,function(x) paste(unique(unlist(str_split(x,","))), collapse = ", "))
+Tem1 %>% flextable() %>% theme_zebra() %>% border%>% add_header_lines(values="TEM Genes antibiotics Resistant profile")%>% border(border=fp_border(color = "black"),part = "all") %>% fontsize(i=1,size=14,part="header")
+
+#SHV<-IRENE_DATA_ANALYSIS_R %>%filter(mo=="Escherichia coli") %>%  select(SHV,AMC:NOR)%>% mutate_at(vars(AMC:NOR), #as.rsi) %>% melt(id="SHV") %>%filter(SHV!="NEG")
+#SHV1<-plyr:: ddply(SHV, .(SHV), summarize,  antibiotics=paste(variable,collapse=","))
+#SHV1 %>% flextable() %>% theme_vanilla() %>% border%>% add_header_lines(values="SHV Genes antibiotic profile")%>% border(border=fp_border(color = "black"),part = "all") %>% fontsize(i=1,size=14,part="header")
+
+CTX<-IRENE_DATA_ANALYSIS_R %>%filter(mo=="Escherichia coli") %>%  select(CTX_M,AMC:NOR)%>% mutate_at(vars(AMC:NOR), as.rsi) %>% melt(id="CTX_M") %>% filter(value=="R") %>% filter(CTX_M!="NEG") 
+CTX1<-plyr:: ddply(CTX, .(CTX_M), summarize,  antibiotics=paste(variable,collapse=",")) 
+CTX1$antibiotics<- sapply(CTX1$antibiotics,function(x) paste(unique(unlist(str_split(x,","))), collapse = ", "))
+CTX1 %>% flextable() %>% theme_zebra %>% border%>% add_header_lines(values="CTX-M Genes antibiotics Resistant profile")%>% border(border=fp_border(color = "black"),part = "all") %>% fontsize(i=1,size=14,part="header")
+
+
+#MEANS
+```
+
+###  GENES WITH RESPECT TO LPS
+  
+H0: There is no association/relationship between gene and the livestock production system
+H1: There is an association / relationship between gene and livestock production system
+  
+```{r ,echo=FALSE, warning=FALSE}
+IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli") %>% select(LPS,TEM)%>% filter(TEM!="NEG")%>% filter(TEM!="") %>% tabyl(TEM,LPS) %>%adorn_percentages("col")%>%
+  adorn_pct_formatting(digits = 0)%>% flextable() %>%  theme_zebra() %>% border%>% add_header_lines(values="TEM GENE")%>% border(border=fp_border(color = "black"),part = "all") %>% fontsize(i=1,size=14,part="header")
+
+IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli") %>% select(LPS,TEM)%>% filter(TEM!="NEG")%>% filter(TEM!="") %>% tabyl(TEM,LPS) %>% janitor::fisher.test()
+
+#IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli")%>% select(LPS,SHV) %>% tabyl(LPS,SHV) %>%  flextable() %>%  theme_zebra() %>% border%>% add_header_lines(values="SHV GENE")%>% border(border=fp_border(color = "black"),part = "all") %>% fontsize(i=1,size=14,part="header")
+
+IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli")%>% select(CTX_M,LPS) %>% filter(CTX_M!="NEG") %>% filter(CTX_M!="")%>% tabyl(CTX_M,LPS) %>%adorn_percentages("col")%>%
+  adorn_pct_formatting(digits = 0) %>% flextable() %>%  theme_zebra() %>% border%>% add_header_lines(values="CTX-M GENE")%>% border(border=fp_border(color = "black"),part = "all") %>% fontsize(i=1,size=14,part="header")
+
+IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli")%>% select(CTX_M,LPS) %>% filter(CTX_M!="NEG") %>% filter(CTX_M!="")%>% tabyl(CTX_M,LPS)%>% janitor::fisher.test()
+
+```
+
+###  Beta-lactams to all genes and counts pecentages
+
+```{r ,echo=FALSE, warning=FALSE}
+BG<-IRENE_DATA_ANALYSIS_R %>%filter(mo=="Escherichia coli") %>%  select(TEM,AMP,AMP,CEC,FEP,CXM,CRO,CTX,CAZ)%>% mutate_at(vars(AMP,AMP,CEC,FEP,CXM,CRO,CTX,CAZ), as.rsi) %>% melt(id="TEM") %>%filter(TEM!="NEG") %>% filter(TEM!="")%>% filter(value=="R")%>%  dplyr::arrange(desc(TEM))
+
+
+BG1<-plyr:: ddply(BG, .(TEM), summarize,  variable=paste(variable,collapse=","))
+
+BG1$variable<- sapply(BG1$variable,function(x) paste(unique(unlist(str_split(x,","))), collapse = ", "))
+
+
+BG1 %>% flextable() %>%  theme_zebra() %>% border%>% add_header_lines(values="Beta-Lactams TEM GENE Resistant profile")%>% border(border=fp_border(color = "black"),part = "all") %>% fontsize(i=1,size=14,part="header")
+
+
+```
+
+

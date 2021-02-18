@@ -1,0 +1,25 @@
+Antibiotic,Frequency,Percentage
+CEC                                        ,22,37.3
+CTX                                         ,8,13.6
+"CAZ,CTX                                     ",3,5.1
+"AMP,CEC                                    ",3,5.1
+"CTX,CEC                                    ",2,3.4
+CAZ                                      ,2,3.4
+"AMP,TCY                                  ",2,3.4
+AMP                        ,2,3.4
+TCY                                      ,1,1.7
+SPT                                       ,1,1.7
+FEP                                         ,1,1.7
+CXM                                        ,1,1.7
+"CTX,CXM                                     ",1,1.7
+"CTX,CEC,TCY,SPT,SXT                       ",1,1.7
+CIP                                        ,1,1.7
+"CEC,GEN                                    ",1,1.7
+"CAZ,CTX,CRO                          ",1,1.7
+"CAZ,CEC                                  ",1,1.7
+"AMP,CTX,CEC,CIP                    ",1,1.7
+"AMP,CEC,TCY,SPT,SXT               ",1,1.7
+"AMP,CAZ,CTX,CRO,CXM,FEP,CEC,TCY,SXT    ",1,1.7
+"AMP,CAZ,CTX,CRO,CXM,FEP,CEC,SXT            ",1,1.7
+"AMP,CAZ,CTX,CRO,CXM,FEP,CEC                 ",1,1.7
+Totals,59,100

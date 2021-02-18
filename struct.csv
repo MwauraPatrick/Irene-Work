@@ -1,0 +1,91 @@
+LPS,interpretation,Group,variable,value
+Extensive,S,Beta-lactams/penicillins,AMC,100
+Extensive,I,Beta-lactams/penicillins,AMC,0
+Extensive,R,Beta-lactams/penicillins,AMC,0
+Intensive,S,Beta-lactams/penicillins,AMC,98.78
+Intensive,I,Beta-lactams/penicillins,AMC,1.22
+Intensive,R,Beta-lactams/penicillins,AMC,0
+Extensive,S,Beta-lactams/penicillins,AMP,85.19
+Extensive,I,Beta-lactams/penicillins,AMP,7.41
+Extensive,R,Beta-lactams/penicillins,AMP,7.41
+Intensive,S,Beta-lactams/penicillins,AMP,86.59
+Intensive,I,Beta-lactams/penicillins,AMP,3.66
+Intensive,R,Beta-lactams/penicillins,AMP,9.76
+Extensive,S,Cephalosporins (3rd gen.),CAZ,59.26
+Extensive,I,Cephalosporins (3rd gen.),CAZ,31.48
+Extensive,R,Cephalosporins (3rd gen.),CAZ,9.26
+Intensive,S,Cephalosporins (3rd gen.),CAZ,76.83
+Intensive,I,Cephalosporins (3rd gen.),CAZ,17.07
+Intensive,R,Cephalosporins (3rd gen.),CAZ,6.1
+Extensive,S,Cephalosporins (2nd gen.),CEC,22.22
+Extensive,I,Cephalosporins (2nd gen.),CEC,44.44
+Extensive,R,Cephalosporins (2nd gen.),CEC,33.33
+Intensive,S,Cephalosporins (2nd gen.),CEC,25.61
+Intensive,I,Cephalosporins (2nd gen.),CEC,50
+Intensive,R,Cephalosporins (2nd gen.),CEC,24.39
+Extensive,S,Amphenicols,CHL,100
+Extensive,I,Amphenicols,CHL,0
+Extensive,R,Amphenicols,CHL,0
+Intensive,S,Amphenicols,CHL,100
+Intensive,I,Amphenicols,CHL,0
+Intensive,R,Amphenicols,CHL,0
+Extensive,S,Quinolones,CIP,64.81
+Extensive,I,Quinolones,CIP,35.19
+Extensive,R,Quinolones,CIP,0
+Intensive,S,Quinolones,CIP,58.54
+Intensive,I,Quinolones,CIP,39.02
+Intensive,R,Quinolones,CIP,2.44
+Extensive,S,Cephalosporins (3rd gen.),CRO,92.59
+Extensive,I,Cephalosporins (3rd gen.),CRO,5.56
+Extensive,R,Cephalosporins (3rd gen.),CRO,1.85
+Intensive,S,Cephalosporins (3rd gen.),CRO,89.02
+Intensive,I,Cephalosporins (3rd gen.),CRO,7.32
+Intensive,R,Cephalosporins (3rd gen.),CRO,3.66
+Extensive,S,Cephalosporins (3rd gen.),CTX,59.26
+Extensive,I,Cephalosporins (3rd gen.),CTX,24.07
+Extensive,R,Cephalosporins (3rd gen.),CTX,16.67
+Intensive,S,Cephalosporins (3rd gen.),CTX,63.41
+Intensive,I,Cephalosporins (3rd gen.),CTX,20.73
+Intensive,R,Cephalosporins (3rd gen.),CTX,15.85
+Extensive,S,Cephalosporins (2nd gen.),CXM,85.19
+Extensive,I,Cephalosporins (2nd gen.),CXM,12.96
+Extensive,R,Cephalosporins (2nd gen.),CXM,1.85
+Intensive,S,Cephalosporins (2nd gen.),CXM,82.93
+Intensive,I,Cephalosporins (2nd gen.),CXM,12.2
+Intensive,R,Cephalosporins (2nd gen.),CXM,4.88
+Extensive,S,Cephalosporins (4th gen.),FEP,75.93
+Extensive,I,Cephalosporins (4th gen.),FEP,22.22
+Extensive,R,Cephalosporins (4th gen.),FEP,1.85
+Intensive,S,Cephalosporins (4th gen.),FEP,74.39
+Intensive,I,Cephalosporins (4th gen.),FEP,21.95
+Intensive,R,Cephalosporins (4th gen.),FEP,3.66
+Extensive,S,Aminoglycosides,GEN,88.89
+Extensive,I,Aminoglycosides,GEN,9.26
+Extensive,R,Aminoglycosides,GEN,1.85
+Intensive,S,Aminoglycosides,GEN,92.68
+Intensive,I,Aminoglycosides,GEN,7.32
+Intensive,R,Aminoglycosides,GEN,0
+Extensive,S,Quinolones,NOR,100
+Extensive,I,Quinolones,NOR,0
+Extensive,R,Quinolones,NOR,0
+Intensive,S,Quinolones,NOR,100
+Intensive,I,Quinolones,NOR,0
+Intensive,R,Quinolones,NOR,0
+Extensive,S,Aminoglycosides,STR1,92.59
+Extensive,I,Aminoglycosides,STR1,5.56
+Extensive,R,Aminoglycosides,STR1,1.85
+Intensive,S,Aminoglycosides,STR1,87.8
+Intensive,I,Aminoglycosides,STR1,9.76
+Intensive,R,Aminoglycosides,STR1,2.44
+Extensive,S,Trimethoprims,SXT,98.15
+Extensive,I,Trimethoprims,SXT,0
+Extensive,R,Trimethoprims,SXT,1.85
+Intensive,S,Trimethoprims,SXT,95.12
+Intensive,I,Trimethoprims,SXT,1.22
+Intensive,R,Trimethoprims,SXT,3.66
+Extensive,S,Tetracyclines,TCY,98.15
+Extensive,I,Tetracyclines,TCY,1.85
+Extensive,R,Tetracyclines,TCY,0
+Intensive,S,Tetracyclines,TCY,90.24
+Intensive,I,Tetracyclines,TCY,1.22
+Intensive,R,Tetracyclines,TCY,8.54
