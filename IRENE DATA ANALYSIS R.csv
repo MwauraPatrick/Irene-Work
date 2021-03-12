@@ -1,305 +1,305 @@
 CAMEL_ID_NUMBER,ISOLATE_ID,Community,Boma,LPS,AGE,Gender,Sample_Type,Transport_media,mo,Colony_Morphology,Gram_staining,IMVIC_Test,AMC,AMP,CAZ,CTX,CRO,CXM,FEP,CEC,TCY,GEN,STR1,CHL,CIP,SXT,NOR,MDR,TEM,SHV,CTX_M,OXA
-1,1-1a,Mpala Ranch,Top spray,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
-2,2-1a,Mpala Ranch,Top spray,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
-3,3-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-4,4-1a,Mpala Ranch,Top spray,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,1,TEM 116,NEG,NEG,NEG
-5,5-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-6,6-1a,Mpala Ranch,Top spray,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big,Round, Raised Lactose Fermenter",Gram -ve rods,POSITIVE,I,R,I,S,S,S,I,R,R,S,R,S,I,R,S,5,TEM 243,NEG,NEG,NEG
-7,7-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big,Round, Raised Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,I,S,S,0,NEG,NEG,NEG,NEG
-8,8-1a,Mpala Ranch,Top spray,Intensive,Adult,Female,Fecal swab,Cary blair,Others,"small,round,pink, colony ",Gram -ve rods,Negative,,,,,,,,,,,,,,,,,,,,
-9,9-1a,Mpala Ranch,Top spray,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Lactose Fermenters",Gram -ve rods,POSITIVE,S,I,I,I,S,I,I,R,S,I,S,S,I,S,S,6,NEG,NEG,NEG,NEG
-10,10-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,I,S,S,0,NEG,NEG,NEG,NEG
-11,11-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-12,12-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-13,13-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-14,14-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-15,15-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-16,16-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-17,17-1a,Mpala Ranch,Top spray,Intensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,R,S,S,0,NEG,NEG,NEG,NEG
-18,18-1a,Mpala Ranch,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-19,19-1a,Mpala Ranch,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-20,20-1a,Mpala Ranch,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-21,21-1a,Mpala Ranch,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-22,22-1a,Mpala Ranch,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-23,23-1a,Mpala Ranch,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-24,24-1a,Mpala Ranch,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-25,25-1a,Mpala Ranch,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-26,26-1a,Mpala Ranch,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-27,27-1a,Mpala Ranch,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-28,28-1a,Mpala Ranch,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-29,29-1a,Mpala Ranch,Top spray,Intensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,R,S,S,S,S,S,I,S,S,S,S,S,S,S,2,NEG,NEG,NEG,NEG
-30,30-1a,Mpala Ranch,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"small, Round, Raised, Smooth margin, Lactose Fermenter",Gram -ve rods,Negative,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
-31,31-1a,Mpala Ranch,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Flat, Irregular Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
-32,32-1a,Ilmotiok,Loruba,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ," Big, Round,Lactose Fermenters",Gram -ve rods,POSITIVE,S,R,I,S,S,S,S,R,S,S,S,S,S,S,S,4,NEG,NEG,NEG,NEG
-33,33-1a,Mpala Ranch,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-34,34-1a,Mpala Ranch,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,0,NEG,NEG,NEG,NEG
-35,35-1a,Mpala Ranch,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-36,36-1a,Mpala Ranch,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-37,37-1a,Mpala Ranch,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-38,38-1a,Mpala Ranch,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-39,39-1a,Mpala Ranch,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Raised, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,I,S,S,I,S,S,1,NEG,NEG,NEG,NEG
-40,40-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-41,41-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-42,42-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-43,43-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-44,44-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-45,45-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-46,46-1a,Mpala Ranch,,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-47,47-1a,Mpala Ranch,,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-48,48-1a,Mpala Ranch,,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-49,49-1a,Mpala Ranch,,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-50,50-1a,Mpala Ranch,,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-51,51-1a,Mpala Ranch,,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-52,52-1a,Mpala Ranch,,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-53,53-1a,Mpala Ranch,near Ranch House,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
-54,54-1a,Mpala Ranch,Near Ranch House,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,R,I,S,S,I,I,I,S,S,S,S,S,S,S,5,NEG,NEG,NEG,NEG
-55,55-1a,Ilmotiok,Lesimbiri,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,I,S,S,S,I,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
-56,56-1a,Ilmotiok,,Extensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-57,57-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-58,58-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-59,59-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-60,60-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-61,61-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-62,62-1a,Ilmotiok,,Extensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-63,63-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-64,64-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-65,65-1a,Ilmotiok,Lesimbiri,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Raised, Smooth Margin, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
-66,66-1a,Ilmotiok,Lesimbiri,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular,Flat, Lactose Fermenter",Gram -ve rods,POSITIVE,S,I,I,R,S,S,I,R,S,I,S,S,I,S,S,5,NEG,NEG,NEG,NEG
-67,67-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-68,68-1a,Ilmotiok,Lesimbiri,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Raised, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
-69,69-1a,Ilmotiok,Lesimbiri,Extensive,Juvenile,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
-70,70-1a,Ilmotiok,Lesimbiri,Extensive,Juvenile,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,R,I,S,S,I,R,S,S,S,S,S,S,S,4,TEM 1A,NEG,NEG,NEG
-71,71-1a,Ilmotiok,,Extensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-72,72-1a,Ilmotiok,,Extensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,R,S,S,S,I,I,R,S,S,S,S,S,S,S,4,NEG,NEG,NEG,NEG
-73,73-1a,Ilmotiok,,Extensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Raised, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,R,S,S,S,I,S,S,S,S,S,S,S,1,TEM 116,NEG,NEG,NEG
-74,74-1a,Ilmotiok,,Extensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Flat, Irregular Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
-75,75-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-76,76-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-77,77-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-78,78-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-79,79-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,S,I,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-80,80-1a,Ilmotiok,Lemungesi,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,I,S,S,I,S,S,1,NEG,NEG,NEG,NEG
-81,81-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,"Small,Round, Raised Lactose Fermenters",,Negative,,,,,,,,,,,,,,,,,,,,
-82,82-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-83,83-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-84,84-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-85,85-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-86,86-1a,Ilmotiok,Meshami,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-87,87-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-88,88-1a,Ilmotiok,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-89,89-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-90,90-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-91,91-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-92,92-1a,Ilmotiok,,Extensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-93,93-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-94,94-1a,Ilmotiok,,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-95,95-1a,Ilmotiok,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-96,96-1a,Ilmotiok,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-97,97-1a,Ilmotiok,,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-98,98-1a,Ilmotiok,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-99,99-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-100,100-1a,Ilmotiok,Meshami,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big,Round, Raised Lactose Fermenter",,POSITIVE,S,S,I,S,S,S,S,R,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
-101,101-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-102,102-1a,Ilmotiok,Meshami,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Irregular, Flat, Lactose Fermenters",Gram -ve rods,POSITIVE,S,I,R,S,S,S,S,I,S,I,S,S,I,S,S,3,TEM 116,NEG,NEG,NEG
-103,103-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,Gram -ve rods,Negative,S,S,I,I,S,S,S,I,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
-104,104-1a,Ilmotiok,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-105,105-1a,Ilmotiok,Kishine,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Irregular, Dry, Lactose Fermenter",Gram -ve rods,POSITIVE,S,I,I,S,S,S,S,R,S,I,S,S,I,S,S,3,NEG,NEG,NEG,NEG
-106,106-1a,Ilmotiok,Kishine,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-107,107-1a,Ilmotiok,Kishine,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-108,108-1a,Ilmotiok,Kishine,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,,Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-109,109-1a,Ilmotiok,Kishine,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Flat, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,I,I,I,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-110,110-1a,Ilmotiok,Kishine,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,Negative,,,,,,,,,,,,,,,,,,,,
-111,111-1a,Ilmotiok,Kishine,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,Negative,,,,,,,,,,,,,,,,,,,,
-112,112-1a,Ilmotiok,Jeremy,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Flat, Dry, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,S,S,S,I,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
-113,113-1a,Ilmotiok,Jeremy,Extensive,Adult,Male,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
-114,114-1a,Ilmotiok,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
-115,115-1a,Ilmotiok,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
-116,116-1a,Ilmotiok,Jeremy,Extensive,Adult,Male,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
-117,117-1a,Ilmotiok,Jeremy,Extensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-118,118-1a,Ilmotiok,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
-119,119-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-120,120-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-121,121-1a,Ilmotiok,Kishine,Extensive,Adult,Male,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
-122,122-1a,Ilmotiok,Kishine,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
-123,123-1a,Ilmotiok,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Pale Pink With A Deep Pink At The Centre,Flat, Irregular Colonies",Gram -ve rods,POSITIVE,S,R,I,I,S,I,I,R,S,S,S,S,I,S,S,6,NEG,NEG,NEG,NEG
-124,124-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-125,125-1a,Ilmotiok,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
-126,126-1a,Ilmotiok,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
-127,127-1a,Ilmotiok,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
-128,128-1a,Ilmotiok,Jeremy,Extensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
-129,129-1a,Ilmotiok,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
-130,130-1a,Ilmotiok,,Extensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-131,131-1a,Ilmotiok,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big,Irregular, Elevated Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,S,S,S,S,S,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
-132,132-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-133,133-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-134,134-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-135,135-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-136,136-1a,Ilmotiok,,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-137,137-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-138,138-1a,Ilmotiok,,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-139,139-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-140,140-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-141,141-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-142,142-1a,Ilmotiok,Sammy Meshami,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Elevated, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,R,S,I,S,R,S,S,S,S,I,S,S,3,TEM 116,NEG,NEG,NEG
-143,143-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-144,144-1a,Ilmotiok, Sammy Meshami,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Elevated, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,I,S,S,S,S,S,I,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
-145,145-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-146,146-1a,Ilmotiok,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-147,147-1a,Ilmotiok,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-148,148-1a,Ilmotiok,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-149,149-1a,Ilmotiok,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-150,150-1a,Ilmotiok,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-151,151-1a,Ilmotiok,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-152,152-1a,Ilmotiok,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-153,153-1a,Ilmotiok,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-154,154-1a,Ilmotiok,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-155,155-1a,Ilmotiok,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-156,156-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,R,S,I,S,S,I,I,R,S,I,S,I,S,S,3,TEM 116,NEG,NEG,NEG
-157,157-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Smooth Margin, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,I,R,S,I,I,I,S,S,S,S,S,S,S,4,TEM 116,NEG,NEG,NEG
-158,158-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-159,159-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,R,S,I,S,S,S,S,0,NEG,NEG,NEG,NEG
-160,160-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-161,161-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,R,S,I,S,S,I,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
-162,162-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
-163,163-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,R,S,S,S,S,S,I,R,S,S,S,S,S,S,2,TEM 104,NEG,NEG,NEG
-164,164-1a,Mpala Ranch,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Dry, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,I,I,S,I,S,S,1,TEM 116,NEG,NEG,NEG
-165,165-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,I,I,R,I,I,S,R,R,I,R,S,I,R,S,6,NEG,NEG,NEG,NEG
-166,166-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-167,167-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,S,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-168,168-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-169,169-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-170,170-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-171,171-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,I,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-172,172-1a,Mpala Ranch,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-173,173-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-174,174-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,R,R,R,R,R,R,R,R,S,I,S,I,R,S,7,TEM 214,NEG,CTX-M 238,NEG
-175,175-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-176,176-1a,Mpala Ranch,Top spray,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,,Gram -ve rods,POSITIVE,S,S,I,S,S,S,S,I,S,S,S,S,S,S,S,2,NEG,NEG,NEG,NEG
-177,177-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
-178,178-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,I,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-179,179-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Elevated Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,I,R,S,I,S,S,I,S,S,3,TEM 243,NEG,NEG,NEG
-180,180-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,I,R,R,R,S,I,I,S,S,S,S,S,S,S,5,TEM 116,NEG,NEG,NEG
-181,181-1a,Mpala Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
-182,182-1a,Ilmotiok,Loruba,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
-183,183-1a,Ilmotiok,Loruba,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Raised, Smooth Margin, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
-184,184-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-185,185-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-186,186-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,I,S,S,I,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-187,187-1a,Mpala Ranch,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,R,I,R,I,I,I,R,S,I,S,S,R,S,S,7,TEM 243,NEG,CTX-M 15,NEG
-188,188-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-189,189-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
-190,190-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-191,191-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,R,I,S,I,S,S,1,NEG,NEG,NEG,NEG
-192,192-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
-193,193-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-194,194-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,I,S,S,I,S,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
-195,195-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-196,196-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-197,197-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,S,I,S,S,S,S,S,S,,TEM 116,NEG,NEG,NEG
-198,198-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Large, Round, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,R,S,S,S,S,,NEG,NEG,NEG,NEG
-199,199-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-200,200-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Large, Round, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
-201,201-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Flat, Dry, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,I,S,I,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-202,202-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Flat, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,R,R,I,S,S,I,S,S,S,S,S,S,S,4,NEG,NEG,NEG,NEG
-203,203-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Dry, Flat, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,R,S,I,I,I,S,S,I,S,I,S,S,4,TEM 116,NEG,NEG,NEG
-204,204-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-205,205-1a,Ilmotiok,,Extensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-206,206-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Dry, Flat, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,R,S,I,I,I,S,I,S,S,I,S,S,4,TEM 243,NEG,NEG,NEG
-207,207-1a,Ilmotiok,,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Irregular, Dry, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-208,208-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big,Irregular, Elevated Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,I,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-209,209-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,I,S,S,S,S,S,I,S,S,S,S,,NEG,NEG,NEG,NEG
-210,210-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"large, Irregular, Pink Colony",Gram -ve rods,POSITIVE,S,S,I,I,S,S,S,I,S,S,S,S,S,S,S,,,,,
-211,211-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,"Small, Irregular, Pink Colony",Gram -ve rods,Negative,,,,,,,,,,,,,,,,,,,,
-212,212-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Dry, Flat, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-213,213-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular,Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-214,214-1a,Ilmotiok,,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,R,R,S,S,I,I,S,S,S,S,I,S,S,3,TEM 116,NEG,NEG,NEG
-215,215-1a,Ilmotiok,Loruba,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,R,R,R,R,R,R,R,S,S,S,S,I,R,S,7,NEG,NEG,CTX-M 27,NEG
-216,216-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Flat, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-217,217-1a,Ilmotiok,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-218,218-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-219,219-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-220,220-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-221,221-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Raised, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
-222,222-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-223,223-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-224,224-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-225,225-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-226,226-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-227,227-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-228,228-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-229,229-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-230,230-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,R,S,S,S,S,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
-231,231-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-232,232-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-233,233-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-234,234-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-235,235-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-236,236-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-237,237-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-238,238-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-239,239-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Raised, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-240,240-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-241,241-1a,Loisaba Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Flat, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,S,S,I`,I,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-242,242-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-243,243-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Dry, Flat, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,I,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-244,244-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-245,245-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-246,246-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Flat, Dry, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,R,I,S,S,S,S,S,S,S,2,TEM 116,NEG,NEG,NEG
-247,247-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,R,S,I,I,I,S,S,S,S,S,S,S,5,NEG,NEG,NEG,NEG
-248,248-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-249,249-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
-250,250-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Dry, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-251,251-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-252,252-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big,Round, Irregular, Dry, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,R,R,S,S,I,S,S,S,S,S,S,S,S,2,TEM 116,NEG,NEG,NEG
-253,253-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-254,254-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-255,255-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,I,I,I,R,S,I,S,S,S,S,S,S,S,1,TEM 116,NEG,NEG,NEG
-256,256-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-257,257-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Flat, Irregular Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
-258,258-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-259,259-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Pink, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,R,S,S,S,S,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
-260,260-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-261,261-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big,Irregular, Elevated Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
-262,262-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round,Dry,  Smooth Margin, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,R,S,R,S,I,S,S,S,S,I,S,S,3,NEG,NEG,NEG,NEG
-263,263-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,R,S,S,I,I,S,S,S,S,S,S,S,2,NEG,NEG,NEG,NEG
-264,264-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Dry, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,I,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-265,265-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-266,266-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-267,267-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-268,268-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-269,269-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-270,270-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,I,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-271,271-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
-272,272-1a,Loisaba Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-273,273-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-274,274-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-275,275-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-276,276-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-277,277-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,I,S,S,I,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
-278,278-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-279,279-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-280,280-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-281,281-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-282,282-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-283,283-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-284,284-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-285,285-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-286,286-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-287,287-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-288,288-1a,Suyian Ranch,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-289,289-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-290,290-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-291,291-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Large, Round, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
-292,292-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
-293,293-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-294,294-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Large, Round, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
-295,295-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-296,296-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,"Small,Regular , Dry, Pink Colony",Gram -ve rods,Negative,,,,,,,,,,,,,,,,,,,,
-297,297-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,"Small,Round , Irregular, flat ,Pink colony",Gram -ve rods,Negative,,,,,,,,,,,,,,,,,,,,
-298,298-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-299,299-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
-300,300-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,I,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-301,301-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ," Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,R,R,R,R,R,R,R,I,S,I,S,I,S,S,7,TEM 1A,NEG,CTX-M 15,NEG
-302,302-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,R,S,S,I,S,I,I,S,1,NEG,NEG,NEG,NEG
-303,303-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,I,S,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
-304,304-1a,Suyian Ranch,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,I,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+1,1-1a,Int.B,Top spray,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
+2,2-1a,Int.B,Top spray,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
+3,3-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+4,4-1a,Int.B,Top spray,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,1,TEM-116,NEG,NEG,NEG
+5,5-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+6,6-1a,Int.B,Top spray,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big,Round, Raised Lactose Fermenter",Gram -ve rods,POSITIVE,I,R,I,S,S,S,I,R,R,S,R,S,I,R,S,5,TEM-243,NEG,NEG,NEG
+7,7-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big,Round, Raised Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,I,S,S,0,NEG,NEG,NEG,NEG
+8,8-1a,Int.B,Top spray,Intensive,Adult,Female,Fecal swab,Cary blair,Others,"small,round,pink, colony ",Gram -ve rods,Negative,,,,,,,,,,,,,,,,,,,,
+9,9-1a,Int.B,Top spray,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Lactose Fermenters",Gram -ve rods,POSITIVE,S,I,I,I,S,I,I,R,S,I,S,S,I,S,S,6,NEG,NEG,NEG,NEG
+10,10-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,I,S,S,0,NEG,NEG,NEG,NEG
+11,11-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+12,12-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+13,13-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+14,14-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+15,15-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+16,16-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+17,17-1a,Int.B,Top spray,Intensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,R,S,S,0,NEG,NEG,NEG,NEG
+18,18-1a,Int.B,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+19,19-1a,Int.B,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+20,20-1a,Int.B,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+21,21-1a,Int.B,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+22,22-1a,Int.B,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+23,23-1a,Int.B,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+24,24-1a,Int.B,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+25,25-1a,Int.B,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+26,26-1a,Int.B,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+27,27-1a,Int.B,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+28,28-1a,Int.B,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+29,29-1a,Int.B,Top spray,Intensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,R,S,S,S,S,S,I,S,S,S,S,S,S,S,2,NEG,NEG,NEG,NEG
+30,30-1a,Int.B,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"small, Round, Raised, Smooth margin, Lactose Fermenter",Gram -ve rods,Negative,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
+31,31-1a,Int.B,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Flat, Irregular Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
+32,32-1a,Ext.A,Loruba,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ," Big, Round,Lactose Fermenters",Gram -ve rods,POSITIVE,S,R,I,S,S,S,S,R,S,S,S,S,S,S,S,4,NEG,NEG,NEG,NEG
+33,33-1a,Int.B,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+34,34-1a,Int.B,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,0,NEG,NEG,NEG,NEG
+35,35-1a,Int.B,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+36,36-1a,Int.B,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+37,37-1a,Int.B,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+38,38-1a,Int.B,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+39,39-1a,Int.B,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Raised, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,I,S,S,I,S,S,1,NEG,NEG,NEG,NEG
+40,40-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+41,41-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+42,42-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+43,43-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+44,44-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+45,45-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+46,46-1a,Int.B,,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+47,47-1a,Int.B,,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+48,48-1a,Int.B,,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+49,49-1a,Int.B,,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+50,50-1a,Int.B,,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+51,51-1a,Int.B,,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+52,52-1a,Int.B,,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+53,53-1a,Int.B,near Ranch House,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
+54,54-1a,Int.B,Near Ranch House,Intensive,Sub-adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,R,I,S,S,I,I,I,S,S,S,S,S,S,S,5,NEG,NEG,NEG,NEG
+55,55-1a,Ext.A,Lesimbiri,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,I,S,S,S,I,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
+56,56-1a,Ext.A,,Extensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+57,57-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+58,58-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+59,59-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+60,60-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+61,61-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+62,62-1a,Ext.A,,Extensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+63,63-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+64,64-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+65,65-1a,Ext.A,Lesimbiri,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Raised, Smooth Margin, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
+66,66-1a,Ext.A,Lesimbiri,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular,Flat, Lactose Fermenter",Gram -ve rods,POSITIVE,S,I,I,R,S,S,I,R,S,I,S,S,I,S,S,5,NEG,NEG,NEG,NEG
+67,67-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+68,68-1a,Ext.A,Lesimbiri,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Raised, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
+69,69-1a,Ext.A,Lesimbiri,Extensive,Juvenile,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
+70,70-1a,Ext.A,Lesimbiri,Extensive,Juvenile,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,R,I,S,S,I,R,S,S,S,S,S,S,S,4,TEM-1A,NEG,NEG,NEG
+71,71-1a,Ext.A,,Extensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+72,72-1a,Ext.A,,Extensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,R,S,S,S,I,I,R,S,S,S,S,S,S,S,4,NEG,NEG,NEG,NEG
+73,73-1a,Ext.A,,Extensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Raised, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,R,S,S,S,I,S,S,S,S,S,S,S,1,TEM-116,NEG,NEG,NEG
+74,74-1a,Ext.A,,Extensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Flat, Irregular Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
+75,75-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+76,76-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+77,77-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+78,78-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+79,79-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,S,I,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+80,80-1a,Ext.A,Lemungesi,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,I,S,S,I,S,S,1,NEG,NEG,NEG,NEG
+81,81-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,"Small,Round, Raised Lactose Fermenters",,Negative,,,,,,,,,,,,,,,,,,,,
+82,82-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+83,83-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+84,84-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+85,85-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+86,86-1a,Ext.A,Meshami,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+87,87-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+88,88-1a,Ext.A,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+89,89-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+90,90-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+91,91-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+92,92-1a,Ext.A,,Extensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+93,93-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+94,94-1a,Ext.A,,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+95,95-1a,Ext.A,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+96,96-1a,Ext.A,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+97,97-1a,Ext.A,,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+98,98-1a,Ext.A,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+99,99-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+100,100-1a,Ext.A,Meshami,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big,Round, Raised Lactose Fermenter",,POSITIVE,S,S,I,S,S,S,S,R,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
+101,101-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+102,102-1a,Ext.A,Meshami,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Irregular, Flat, Lactose Fermenters",Gram -ve rods,POSITIVE,S,I,R,S,S,S,S,I,S,I,S,S,I,S,S,3,TEM-116,NEG,NEG,NEG
+103,103-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,Gram -ve rods,Negative,S,S,I,I,S,S,S,I,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
+104,104-1a,Ext.A,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+105,105-1a,Ext.A,Kishine,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Irregular, Dry, Lactose Fermenter",Gram -ve rods,POSITIVE,S,I,I,S,S,S,S,R,S,I,S,S,I,S,S,3,NEG,NEG,NEG,NEG
+106,106-1a,Ext.A,Kishine,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+107,107-1a,Ext.A,Kishine,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+108,108-1a,Ext.A,Kishine,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,,Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+109,109-1a,Ext.A,Kishine,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Flat, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,I,I,I,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+110,110-1a,Ext.A,Kishine,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,Negative,,,,,,,,,,,,,,,,,,,,
+111,111-1a,Ext.A,Kishine,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,Negative,,,,,,,,,,,,,,,,,,,,
+112,112-1a,Ext.A,Jeremy,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Flat, Dry, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,S,S,S,I,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
+113,113-1a,Ext.A,Jeremy,Extensive,Adult,Male,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
+114,114-1a,Ext.A,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
+115,115-1a,Ext.A,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
+116,116-1a,Ext.A,Jeremy,Extensive,Adult,Male,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
+117,117-1a,Ext.A,Jeremy,Extensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+118,118-1a,Ext.A,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
+119,119-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+120,120-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+121,121-1a,Ext.A,Kishine,Extensive,Adult,Male,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
+122,122-1a,Ext.A,Kishine,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
+123,123-1a,Ext.A,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Pale Pink With A Deep Pink At The Centre,Flat, Irregular Colonies",Gram -ve rods,POSITIVE,S,R,I,I,S,I,I,R,S,S,S,S,I,S,S,6,NEG,NEG,NEG,NEG
+124,124-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+125,125-1a,Ext.A,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
+126,126-1a,Ext.A,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
+127,127-1a,Ext.A,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
+128,128-1a,Ext.A,Jeremy,Extensive,Juvenile,Male,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
+129,129-1a,Ext.A,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,,,,,,,,,,,,,,,,,,,,,
+130,130-1a,Ext.A,,Extensive,Juvenile,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+131,131-1a,Ext.A,Jeremy,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big,Irregular, Elevated Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,S,S,S,S,S,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
+132,132-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+133,133-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+134,134-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+135,135-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+136,136-1a,Ext.A,,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+137,137-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+138,138-1a,Ext.A,,Extensive,Sub-adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+139,139-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+140,140-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+141,141-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+142,142-1a,Ext.A,Sammy Meshami,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Elevated, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,R,S,I,S,R,S,S,S,S,I,S,S,3,TEM-116,NEG,NEG,NEG
+143,143-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+144,144-1a,Ext.A, Sammy Meshami,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Elevated, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,I,S,S,S,S,S,I,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
+145,145-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+146,146-1a,Ext.A,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+147,147-1a,Ext.A,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+148,148-1a,Ext.A,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+149,149-1a,Ext.A,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+150,150-1a,Ext.A,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+151,151-1a,Ext.A,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+152,152-1a,Ext.A,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+153,153-1a,Ext.A,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+154,154-1a,Ext.A,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+155,155-1a,Ext.A,,Extensive,Sub-adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+156,156-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,R,S,I,S,S,I,I,R,S,I,S,I,S,S,3,TEM-116,NEG,NEG,NEG
+157,157-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Smooth Margin, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,I,R,S,I,I,I,S,S,S,S,S,S,S,4,TEM-116,NEG,NEG,NEG
+158,158-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+159,159-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,R,S,I,S,S,S,S,0,NEG,NEG,NEG,NEG
+160,160-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+161,161-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,R,S,I,S,S,I,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
+162,162-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
+163,163-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,R,S,S,S,S,S,I,R,S,S,S,S,S,S,2,TEM-104,NEG,NEG,NEG
+164,164-1a,Int.B,,Intensive,Juvenile,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Dry, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,I,I,S,I,S,S,1,TEM-116,NEG,NEG,NEG
+165,165-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,I,I,R,I,I,S,R,R,I,R,S,I,R,S,6,NEG,NEG,NEG,NEG
+166,166-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+167,167-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,S,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+168,168-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+169,169-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+170,170-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+171,171-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,I,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+172,172-1a,Int.B,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+173,173-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+174,174-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,R,R,R,R,R,R,R,R,S,I,S,I,R,S,7,TEM-1A,NEG,CTX-M-15,NEG
+175,175-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+176,176-1a,Int.B,Top spray,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,,Gram -ve rods,POSITIVE,S,S,I,S,S,S,S,I,S,S,S,S,S,S,S,2,NEG,NEG,NEG,NEG
+177,177-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,0,NEG,NEG,NEG,NEG
+178,178-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,I,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+179,179-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Elevated Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,I,R,S,I,S,S,I,S,S,3,TEM-243,NEG,NEG,NEG
+180,180-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,I,R,R,R,S,I,I,S,S,S,S,S,S,S,5,TEM-116,NEG,NEG,NEG
+181,181-1a,Int.B,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
+182,182-1a,Ext.A,Loruba,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
+183,183-1a,Ext.A,Loruba,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Raised, Smooth Margin, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
+184,184-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+185,185-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+186,186-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,I,S,S,I,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+187,187-1a,Int.B,,Intensive,Juvenile,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,R,I,R,I,I,I,R,S,I,S,S,R,S,S,7,TEM-243,NEG,CTX-M-15,NEG
+188,188-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+189,189-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
+190,190-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+191,191-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,R,I,S,I,S,S,1,NEG,NEG,NEG,NEG
+192,192-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
+193,193-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+194,194-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,I,S,S,I,S,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
+195,195-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+196,196-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+197,197-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,S,I,S,S,S,S,S,S,,TEM-116,NEG,NEG,NEG
+198,198-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Large, Round, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,R,S,S,S,S,,NEG,NEG,NEG,NEG
+199,199-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+200,200-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Large, Round, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
+201,201-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Flat, Dry, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,I,S,I,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+202,202-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Flat, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,R,R,I,S,S,I,S,S,S,S,S,S,S,4,NEG,NEG,NEG,NEG
+203,203-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Dry, Flat, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,R,S,I,I,I,S,S,I,S,I,S,S,4,TEM-116,NEG,NEG,NEG
+204,204-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+205,205-1a,Ext.A,,Extensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+206,206-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Dry, Flat, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,R,S,I,I,I,S,I,S,S,I,S,S,4,TEM-243,NEG,NEG,NEG
+207,207-1a,Ext.A,,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Irregular, Dry, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+208,208-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big,Irregular, Elevated Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,I,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+209,209-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,I,S,S,S,S,S,I,S,S,S,S,,NEG,NEG,NEG,NEG
+210,210-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"large, Irregular, Pink Colony",Gram -ve rods,POSITIVE,S,S,I,I,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+211,211-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Others,"Small, Irregular, Pink Colony",Gram -ve rods,Negative,,,,,,,,,,,,,,,,,,,,
+212,212-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Dry, Flat, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+213,213-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular,Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+214,214-1a,Ext.A,,Extensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,R,R,S,S,I,I,S,S,S,S,I,S,S,3,TEM-116,NEG,NEG,NEG
+215,215-1a,Ext.A,Loruba,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,R,R,R,R,R,R,R,S,S,S,S,I,R,S,7,NEG,NEG,CTX-M-27,NEG
+216,216-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Flat, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+217,217-1a,Ext.A,,Extensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+218,218-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+219,219-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+220,220-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+221,221-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Raised, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
+222,222-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+223,223-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+224,224-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+225,225-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+226,226-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+227,227-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+228,228-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+229,229-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+230,230-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,R,S,S,S,S,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
+231,231-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+232,232-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+233,233-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+234,234-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+235,235-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+236,236-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+237,237-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+238,238-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+239,239-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Raised, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+240,240-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+241,241-1a,Int.C,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Flat, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,S,S,I`,I,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+242,242-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+243,243-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Dry, Flat, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,I,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+244,244-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+245,245-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+246,246-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Flat, Dry, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,R,I,S,S,S,S,S,S,S,2,TEM-116,NEG,NEG,NEG
+247,247-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,R,S,I,I,I,S,S,S,S,S,S,S,5,NEG,NEG,NEG,NEG
+248,248-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+249,249-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
+250,250-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Dry, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+251,251-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+252,252-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big,Round, Irregular, Dry, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,R,R,S,S,I,S,S,S,S,S,S,S,S,2,TEM-116,NEG,NEG,NEG
+253,253-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+254,254-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+255,255-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,I,I,I,R,S,I,S,S,S,S,S,S,S,1,TEM-116,NEG,NEG,NEG
+256,256-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+257,257-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Flat, Irregular Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
+258,258-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+259,259-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Pink, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,R,S,S,S,S,S,S,S,S,S,S,S,1,NEG,NEG,NEG,NEG
+260,260-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+261,261-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big,Irregular, Elevated Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
+262,262-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round,Dry,  Smooth Margin, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,R,S,R,S,I,S,S,S,S,I,S,S,3,NEG,NEG,NEG,NEG
+263,263-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,R,S,S,I,I,S,S,S,S,S,S,S,2,NEG,NEG,NEG,NEG
+264,264-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Dry, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,I,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+265,265-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+266,266-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+267,267-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+268,268-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+269,269-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+270,270-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,I,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+271,271-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
+272,272-1a,Int.C,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+273,273-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+274,274-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+275,275-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+276,276-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+277,277-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Irregular, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,I,I,S,S,I,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
+278,278-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+279,279-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+280,280-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+281,281-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+282,282-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Big, Round, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+283,283-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+284,284-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+285,285-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+286,286-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,S,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+287,287-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+288,288-1a,Int.D,,Intensive,Adult,Male,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+289,289-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+290,290-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+291,291-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Large, Round, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,R,S,S,S,S,I,S,S,1,NEG,NEG,NEG,NEG
+292,292-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,S,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
+293,293-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+294,294-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Large, Round, Irregular, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,S,S,S,I,S,S,S,S,I,S,S,,NEG,NEG,NEG,NEG
+295,295-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+296,296-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,"Small,Regular , Dry, Pink Colony",Gram -ve rods,Negative,,,,,,,,,,,,,,,,,,,,
+297,297-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,"Small,Round , Irregular, flat ,Pink colony",Gram -ve rods,Negative,,,,,,,,,,,,,,,,,,,,
+298,298-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+299,299-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Others,,,POSITIVE,,,,,,,,,,,,,,,,,,,,
+300,300-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,I,S,S,I,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+301,301-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ," Small, Round, Lactose Fermenter",Gram -ve rods,POSITIVE,S,R,R,R,R,R,R,R,I,S,I,S,I,S,S,7,TEM-1A,NEG,CTX-M-15,NEG
+302,302-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Irregular, Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,S,I,S,S,S,R,S,S,I,S,I,I,S,1,NEG,NEG,NEG,NEG
+303,303-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small,Round, Raised Lactose Fermenters",Gram -ve rods,POSITIVE,S,S,I,S,S,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
+304,304-1a,Int.D,,Intensive,Adult,Female,Fecal swab,Cary blair,Escherichia coli ,"Small, Round, Moist, Lactose Fermenter",Gram -ve rods,POSITIVE,S,S,S,S,I,S,S,I,S,S,S,S,S,S,S,,NEG,NEG,NEG,NEG
