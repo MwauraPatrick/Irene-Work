@@ -15,8 +15,9 @@ Mpala-Int.B,
 Loisaba-Int.C,
 Suyien-Int.D.
 
-```{r setup, include=FALSE}
+```{r, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(dpi=300,fig.width=7)
 rm()
 library(xml2)
 library(rvest)
@@ -30,10 +31,12 @@ library(officer)
 library(rmarkdown)
 library(conflicted)
 library(tidyr)
+library(hrbrthemes)
 library(tidyverse)
 library(dplyr)
 conflict_prefer("filter", "dplyr")
 conflict_prefer("mutate", "dplyr")
+conflict_prefer("scale_y_percent", "AMR")
 library(readxl)
 library(here)
 library(plyr)
@@ -66,35 +69,32 @@ library(huxtable)
 library(stringr)
 library(purrr)
 library(plotrix)
+conflict_prefer("desc", "plyr")
+#conflict_prefer("strsplit", "Biostrings")
+conflict_prefer("desc", "plyr")
 #source("http://pcwww.liv.ac.uk/~william/R/crosstab.r")
 req <- substitute(require(x, character.only = TRUE))
 #libs<-c("sjPlot")
 #sapply(libs, function(x) eval(req) || {install.packages(x); eval(req)})
 conflict_prefer("rename", "dplyr")
+conflict_prefer("desc", "plyr")
 conflict_prefer("fmt_percent","huxtable")
 setwd("E:/RESULTS/Mwaura/mwaura/WORK1/Covid19/Irene Work")
 IRENE_DATA_ANALYSIS_R <- fread("IRENE DATA ANALYSIS R.csv")
 attach(IRENE_DATA_ANALYSIS_R)
 ```
 #### R version 
-```{r,echo=FALSE,message=FALSE,warning=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
 #R.version
 R.version$version.string
+#glimpse(IRENE_DATA_ANALYSIS_R) %>% flextable()
 ```
 
 ### Summary of the data
 
-```{r ,echo=FALSE,message=FALSE,warning=FALSE,warning=FALSE}
-#glimpse(IRENE_DATA_ANALYSIS_R) %>% flextable()
+#### a.	What is the count and percentage of E. coli recovered from the total camel samples?
 
-
-```
-
-
-### a.	What is the count and percentage of E. coli recovered from the total camel samples?
-
-```{r,echo=FALSE,message=FALSE,warning=FALSE,warning=FALSE}
-
+```{r,echo=FALSE, message=FALSE, warning=FALSE,dpi=400}
 IRENE_DATA_ANALYSIS_R  %>% tabyl(mo)%>% adorn_pct_formatting(digits = 2) %>%  flextable()%>% theme_zebra() %>% border(border=fp_border(color = "black"),part = "all")%>% border(part = "all")%>% add_header_lines(values="E.coli recovered from Camels") #%>% fontsize(i=1,size=12,part="header") 
 
 pie<-IRENE_DATA_ANALYSIS_R  %>% tabyl(mo) %>% select(mo,n)
@@ -103,20 +103,21 @@ pct <- round(pie[[2]]/sum(pie[[2]])*100)
 pie3D(pie[[2]],labels=paste(pie[[1]],sep="", pct,"%"),explode=0.1,main="Percentage of E.coli  Detected")
 
 
-IRENE_DATA_ANALYSIS_R %>% select(mo) %>% group_by(mo) %>%  dplyr::summarise(n = n()) %>% mutate(Percentage=paste0(round(n/sum(n)*100,0),"%")) %>% ggplot(aes(x="", y=mo, fill=Percentage)) + geom_bar(stat="identity", width=1)+ coord_polar("y" ,start=0) +theme_classic()+labs( title = "Percentage of E.coli  Detected")+scale_fill_manual(values=c( "#33658A", "#F6AE2D"))+theme(axis.line = element_blank(),axis.text = element_blank(),axis.ticks = element_blank(), plot.title = element_text(hjust = 0.5, color = "black"))+geom_text(aes(y = mo,label="E.coli"), position = position_stack(vjust = .5),color = "#F6AE2D", size=4) 
+IRENE_DATA_ANALYSIS_R %>% select(mo) %>% group_by(mo) %>%  dplyr::summarise(n = n()) %>% mutate(Percentage=paste0(round(n/sum(n)*100,0),"%")) %>% ggplot(aes(x="", y=mo, fill=Percentage)) + geom_bar(stat="identity", width=1)+ coord_polar("y" ,start=0) +theme_classic()+labs( title = "Percentage of E.coli  Detected")+scale_fill_manual(values=c( "#33658A", "#F6AE2D"))+theme(axis.line = element_blank(),axis.text = element_blank(),axis.ticks = element_blank(), plot.title = element_text(hjust = 0.5, color = "black"))+geom_text(aes(y = mo,label="E.coli"), position = position_stack(vjust = .5),color = "#F6AE2D", size=4) + theme(axis.title.x = element_text( hjust = 0.5),axis.title.y = element_text( hjust = 0.5))
+
 
 ```
 
 
-### b.	What is the count and percentage of E. coli recovered under the extensive and intensive livestock production system?
+#### b.	What is the count and percentage of E. coli recovered under the extensive and intensive livestock production system?
 
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r, message=FALSE, warning=FALSE,echo=FALSE,dpi=400}
 IRENE_DATA_ANALYSIS_R %>% tabyl(mo,LPS) %>%  adorn_totals(c("row","col")) %>%  adorn_percentages("col") %>%
   adorn_pct_formatting(digits = 2) %>%
   adorn_ns() %>%  flextable()%>% theme_zebra() %>% border(border=fp_border(color = "black"),part = "all")%>% border(part = "all")%>% add_header_lines(values="E.coli recovered by Livestock Production System") %>% fontsize(i=1,size=12,part="header")
-IRENE_DATA_ANALYSIS_R %>% select(mo,Community) %>% melt(id.vars="Community") %>% filter(value!="Others") %>% ggplot(aes(x=Community,fill=value))+geom_bar(fill="steelblue")+ylab("E.coli")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .9),color="black")+ggtitle("Distribution of E.coli recovered")
+IRENE_DATA_ANALYSIS_R %>% select(mo,Community) %>% melt(id.vars="Community") %>% filter(value!="Others") %>% ggplot(aes(x=Community,fill=value))+geom_bar(fill="steelblue")+ylab("E.coli")+xlab("Livestock Production System")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .9),color="black")+ggtitle("Distribution of E.coli recovered")+theme_ipsum()
 
-IRENE_DATA_ANALYSIS_R %>% ggplot(aes(x=mo,fill=LPS))+geom_bar()+ylab("Number of Camels")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .9),color="black")+ggtitle("E.coli Recovered")
+IRENE_DATA_ANALYSIS_R %>% ggplot(aes(x=mo,fill=LPS))+geom_bar()+ylab("Number of Camels")+xlab("Microbial Organism")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .9),color="black")+ggtitle("E.coli Recovered")+theme_ipsum()+ theme(axis.title.x = element_text( hjust = 0.5),axis.title.y = element_text( hjust = 0.5))
 
 
 
@@ -126,14 +127,14 @@ IRENE_DATA_ANALYSIS_R %>% ggplot(aes(x=mo,fill=LPS))+geom_bar()+ylab("Number of 
 ```
 
 
-### c.	What is the count and percentage of E. coli recovered in different ranches under the intensive livestock production system?
+#### c.	What is the count and percentage of E. coli recovered in different ranches under the intensive livestock production system?
 
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r, message=FALSE, warning=FALSE,echo=FALSE,dpi=400}
 IRENE_DATA_ANALYSIS_R %>% tabyl(mo,Community)  %>%  adorn_totals(c("row","col")) %>%  adorn_percentages("row") %>%
   adorn_pct_formatting(digits = 2) %>%
   adorn_ns() %>%  flextable()%>% theme_zebra() %>% border(border=fp_border(color = "black"),part = "all")%>% border(part = "all")%>% add_header_lines(values="E.coli recovered from intensive Production Ranches") %>% fontsize(i=1,size=12,part="header")  
 
-IRENE_DATA_ANALYSIS_R %>% select(Community,TEM,CTX_M) %>% melt(id.vars="Community") %>% filter(value!="NEG") %>% filter(value!="")%>% ggplot(aes(x=Community,fill=value))+geom_bar()+ylab("Gene Counts ")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .9),color="black")+ggtitle("Distribution of Genes")
+IRENE_DATA_ANALYSIS_R %>% select(Community,TEM,CTX_M) %>% melt(id.vars="Community") %>% filter(value!="NEG") %>% filter(value!="")%>% ggplot(aes(x=Community,fill=value))+geom_bar()+ylab("Gene Counts ")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .9),color="black")+ggtitle("Distribution of Beta-lactamase Genes")+theme_ipsum(plot_title_size = 12,caption_face = "italic",caption_margin = 10 ,axis_text_size = 10,axis_title_size = 10,axis_title_face = "plain",axis_title_just = "rt",plot_margin = margin(5, 5, 5, 5),grid_col = "#cccccc",grid = TRUE,axis_col = "black", axis = TRUE,ticks = FALSE)+ylab("No. of \n Beta-lactamase Genes")+xlab("Livestock Production System")+ theme(axis.title.x = element_text( hjust = 0.5),axis.title.y = element_text( hjust = 0.5))+ guides(fill=guide_legend(title="Beta-lactamase \n Gene Diversity"))+theme(plot.title = element_text(hjust = 0.5))
 
 ```
 
@@ -156,7 +157,7 @@ Fail to Reject the null hypothesis
 This is because the p-value is greater than the significant level of 5%/0.05
 Two events are independent if and only if the OR equals 1
 
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
 IRENE_DATA_ANALYSIS_R %>% tabyl(mo,LPS) %>% janitor::fisher.test()
 
 FT<-IRENE_DATA_ANALYSIS_R %>% tabyl(mo,LPS) %>% janitor::fisher.test()
@@ -182,7 +183,7 @@ Fail to Reject the null hypothesis
 This is because the p-value is greater than the significant level of 5%/0.05
 Two events are independent if and only if the OR equals 1
 
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
 pieR<-IRENE_DATA_ANALYSIS_R%>% filter(Community!="Ext.A")%>% tabyl(mo,Community) %>%adorn_percentages("col") %>%
        adorn_pct_formatting(digits = 2) %>%
        adorn_ns()%>% melt(id="mo")
@@ -194,7 +195,7 @@ ggplot(pieR, aes("", mo, fill = value)) +
               color = "white", size = 3,show.legend = FALSE) +
     coord_polar(theta = "y") +
     facet_wrap(~ variable, ncol = 3) +
-    theme_void()
+    theme_void()+ guides(fill=guide_legend(title="Representation")) 
 
 IRENE_DATA_ANALYSIS_R %>% filter(LPS=="Intensive")%>% tabyl(mo,Community)%>% janitor::fisher.test()
 
@@ -215,7 +216,7 @@ CT1$p.value %>% as_tibble() %>% flextable() %>% set_header_labels(value="Chi-Sq 
 
 ##### (i) What is the count and percentage of R, I, S of all the E. coli against all the antibiotics?  
 
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
 IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli") %>% select(AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% count_df(translate_ab = TRUE,combine_SI = FALSE) %>% spread(key = interpretation,value = value) %>% adorn_percentages("row") %>%
   adorn_pct_formatting(digits = 2)%>%
     adorn_ns()%>% flextable()%>% theme_zebra() %>% border(border=fp_border(color = "black"),part = "all")%>% add_header_lines(values="Antibiotic Susceptibility  Intermediate and Resistance") %>% fontsize(i=1,size=12,part="header") 
@@ -223,7 +224,11 @@ IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli") %>% select(AMC:NOR) %>%
 ```
 
 #####   (ii)what is the count and percentage of R, I, S between the intensive (mpala, loisaba, suyian) and extensive?
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
+#struct<-IRENE_DATA_ANALYSIS_R %>% select(LPS,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>%group_by(LPS) %>% proportion_df(translate_ab=FALSE,combine_SI = FALSE)  %>% spread(key = antibiotic,value = value) %>% melt(id.vars=c("LPS","interpretation"),measure.vars=c("AMC","AMP","CAZ","CEC","CHL","CIP","CRO","CTX","CXM","FEP","GEN","NOR","STR1","SXT","TCY")) %>% gt() %>% gt::fmt_percent(columns = 4,decimals = 2)
+
+#write.csv(struct,"E:/RESULTS/Mwaura/mwaura/WORK1/Covid19/Irene Work\\struct.csv", row.names = FALSE)struct<-read.csv("struct.csv")
+
 struct<-read.csv("struct.csv")
 
 lps<-struct %>% as.data.table() %>% dplyr::arrange(LPS) %>% spread(key = interpretation,value = value)
@@ -248,7 +253,7 @@ cbind(GP,Ext1,Int1) %>%  huxtable() %>% huxtable::as_flextable() %>% merge_v(j="
 ##### Another table
 
 
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
 #IRENE_DATA_ANALYSIS_R %>% select(Community,LPS,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% melt(id=c("Community","LPS")) %>% dplyr::arrange(desc(Community))
 GEN<-IRENE_DATA_ANALYSIS_R %>% select(Community,LPS,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% melt(id=c("Community","LPS")) %>% dplyr::arrange(desc(Community))  %>%  na.omit() %>% tabyl(variable,value) %>% adorn_percentages("row")%>%adorn_pct_formatting(digits = 0) %>% adorn_ns() %>% select(-variable)
 colnames(GEN)<-c("ALL.I","ALL.R","ALL.S") 
@@ -292,7 +297,7 @@ Fail to Reject the null hypothesis
 This is because the p-value is greater than the significant level of 5%/0.05
 
 
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
 CHI<-IRENE_DATA_ANALYSIS_R %>% select(Community,LPS,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% melt(id=c("Community","LPS")) %>% dplyr::arrange(desc(Community)) %>%filter(value=="R") %>% tabyl(variable,LPS) %>% janitor::fisher.test()
 CHI
 
@@ -314,7 +319,7 @@ NOTE: No antimicrobial agents of class cephalosporins (1st gen.) found (such as 
       cephapirin).
       Selecting cephalosporins (2nd gen.): column 'CEC' (cefaclor), column 'CXM' (cefuroxime)
 NOTE: No antimicrobial agents of class carbapenems found (such as doripenem, imipenem).
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
 
 IRENE_DATA_ANALYSIS_R %>%filter(mo=="Escherichia coli") %>%  select(AMP,AMP,CEC,FEP,CXM,CRO,CTX,CAZ)%>% mutate_at(vars(AMP:CAZ), as.rsi) %>% count_df(translate_ab = TRUE,combine_SI = FALSE) %>% spread(key =interpretation,value = value ) %>% adorn_percentages("row") %>%
     adorn_pct_formatting(digits = 2) %>% 
@@ -337,7 +342,7 @@ Fail to Reject the null hypothesis
 
 This is because the p-value is greater than the significant level of 5%/0.05
 
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
 FTets<-IRENE_DATA_ANALYSIS_R %>% select(Community,LPS,AMP,AMP,CEC,FEP,CXM,CRO,CTX,CAZ) %>% mutate_at(vars(AMP,AMP,CEC,FEP,CXM,CRO,CTX,CAZ), as.rsi) %>% melt(id=c("Community","LPS")) %>% dplyr::arrange(desc(Community)) %>%filter(value=="R") %>% tabyl(variable,LPS)%>% janitor::fisher.test()
 
 FTets
@@ -365,8 +370,8 @@ Extensively drug-resistant (XDR)
 Pandrug-resistant (PDR)	
 
 
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
-IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli") %>% select(AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% ggplot_rsi(translate_ab=FALSE,combine_SI = FALSE,combine_IR = FALSE,title = "Plot for R,S and I",caption = "To get the percentages, please consider the tables provided")+geom_rsi(translate_ab = FALSE,combine_SI = FALSE) + scale_y_percent(breaks = 0:4*25)+theme_rsi()+labels_rsi_count(position = NULL,translate_ab = FALSE,combine_SI = FALSE,    datalabels.colour = "black")+coord_flip(expand = TRUE)+labs(subtitle = "n=123")+theme(legend.position = "bottom")
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
+IRENE_DATA_ANALYSIS_R %>% filter(mo=="Escherichia coli") %>% select(AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% ggplot_rsi(translate_ab=FALSE,combine_SI = FALSE,combine_IR = FALSE,title = "",caption = "")+geom_rsi(translate_ab = FALSE,combine_SI = FALSE) + scale_y_percent(breaks = 0:10*10)+theme_rsi()+labels_rsi_count(position = NULL,translate_ab = FALSE,combine_SI = FALSE,    datalabels.colour = "black")+coord_flip(expand = TRUE)+xlab("Antimicrobial Agents")+ylab("Proportion(%)")+theme(legend.position = "bottom")+theme_ipsum(plot_title_size = 12,caption_face = "italic",caption_margin = 10, axis_text_size = 6,axis_title_size = 9,axis_title_face = "plain",axis_title_just = "rt",plot_margin = margin(5, 5, 5, 5),grid_col = "#cccccc",grid = TRUE,axis_col = "#cccccc", axis = FALSE,ticks = FALSE) + guides(fill=guide_legend(title="Interpretation")) + theme(axis.title.x = element_text( hjust = 0.5),axis.title.y = element_text( hjust = 0.5),plot.title =element_text( hjust = 0.5) )+ theme(legend.position="bottom")
 
 prof<-IRENE_DATA_ANALYSIS_R %>%filter(mo=="Escherichia coli") %>%  select(ISOLATE_ID,AMC:NOR)%>% mutate_at(vars(AMC:NOR), as.rsi) %>% melt(id="ISOLATE_ID") %>% filter(value=="R") 
 
@@ -379,11 +384,11 @@ Profile3<-read.csv("profile3.csv")
 Profile3 %>%flextable() %>%   theme_zebra() %>%  add_header_lines(values="Antibiotics Profiles with number of isolates Resistants ")%>% border(border=fp_border(color = "black"),part = "all") %>% fontsize(i=1,size=12,part="header") 
 #prof2<-prof1 %>% summarytools::freq(prof1$antibiotics,order = "freq",cumul=FALSE,report.nas = FALSE)
 
-IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>% mdro(verbose = FALSE,only_rsi_columns=TRUE,pct_required_classes = 0.0,info = interactive(),combine_SI = TRUE,col_mo = NULL)%>% tab1( col=c("green","blue"),cum.percent = FALSE,main ="Multidrug Resistance bar graph",cex.names = 0.7,cex=0.6,cex.main=1,cex.axis=0.8,horiz = TRUE,cex.lab=0.3 ) 
+IRENE_DATA_ANALYSIS_R %>% select(mo,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi)%>% mdro(verbose = FALSE,only_rsi_columns=TRUE,pct_required_classes = 0.0,info = interactive(),combine_SI = TRUE,col_mo = NULL)%>% tab1( col=c("green","blue"),cum.percent = FALSE,main ="Multidrug Resistance bar graph",cex.names = 0.7,cex=0.6,cex.main=1,cex.axis=0.8,horiz = TRUE,cex.lab=0.3 )
 
 ```
 #### 3.	To determine ESBLs genes; TEM, OXA, CTX-M, and SHV found in Escherichia coli isolated from camels’ gut in Laikipia North Sub-County.
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
 
 ```
 #### 4.	To determine the variants of ESBL genes found in Escherichia coli isolated from camels’ gut in Laikipia North Sub-County
@@ -392,7 +397,7 @@ NB: Question three and four are answered by the following;
 #### a.
 
 ##### (i) What is the count and percentage of TEM and CTX-M genes found in E. coli from the total number of E. coli recovered?
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
 
 TEMP<-IRENE_DATA_ANALYSIS_R %>%  tabyl(TEM)%>% filter(TEM!="NEG") %>% filter(TEM!="")%>% adorn_pct_formatting(digits = 2)
 
@@ -411,7 +416,7 @@ TC%>%  flextable()%>% theme_zebra() %>% border(border=fp_border(color = "black")
 H0: There is no association in Extensive and Intensive livestock production systems and gene occurrence.
 H1: There is an a association in Extensive and Intensive livestock production systems and gene occurrence.
 
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
 TEM2<-IRENE_DATA_ANALYSIS_R  %>% tabyl(TEM,LPS) %>%  adorn_totals(c("col"))%>%adorn_percentages("col") %>%adorn_pct_formatting(digits = 2) %>%adorn_ns() %>% filter(TEM!="NEG") %>% filter(TEM!="")
 
 CTX2<-IRENE_DATA_ANALYSIS_R  %>% tabyl(CTX_M,LPS) %>%  adorn_totals(c("col"))%>%adorn_percentages("col") %>%adorn_pct_formatting(digits = 2) %>%adorn_ns() %>% filter(CTX_M!="NEG") %>% filter(CTX_M!="")
@@ -441,7 +446,7 @@ FT111$p.value %>% as_tibble() %>% flextable() %>% set_header_labels(value="F-tes
 #### b.
 
 ##### What is the antibiotic resistance profile of the resistance genes: TEM and CTX-M. antibiotic combination showing resistance to each gene and combination of the genes if any? What is the frequency (count and percentage) of the isolates in the categories?
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
 
 BN0<-IRENE_DATA_ANALYSIS_R %>%filter(mo=="Escherichia coli") %>%  select(ISOLATE_ID,AMC:NOR,TEM,CTX_M) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% melt(id=c("TEM","CTX_M","ISOLATE_ID")) %>% filter(value=="R") %>% mutate(Genes=paste(TEM,CTX_M,sep = "-")) %>% select(-TEM,-CTX_M) %>% dplyr::arrange(desc(Genes))  %>% select(Genes,ISOLATE_ID)
 
@@ -488,7 +493,7 @@ H1: There is an association / relationship between gender and livestock producti
 Reject the Null hypothesis:There is a significant relationship between Gender and Livestock production system. Therefore, knowing the value of one  may help to give vital information about the other
 .
 
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
 
 comm<-IRENE_DATA_ANALYSIS_R %>% tabyl(Community,LPS) 
 
@@ -501,7 +506,7 @@ janitor::fisher.test(comm)
 
 #IRENE_DATA_ANALYSIS_R %>% select(Community,LPS) %>%  ggplot(aes(x=Community,fill=LPS))+geom_bar(color="blue",fill="blue")+ylab("Number of Camels")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .9),color="white")
 
-IRENE_DATA_ANALYSIS_R %>% select(Community,LPS) %>%  ggplot(aes(x=Community,fill=LPS))+geom_bar()+ylab("Number of Camels")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .9),color="black")
+IRENE_DATA_ANALYSIS_R %>% select(Community,LPS) %>%  ggplot(aes(x=Community,fill=LPS))+geom_bar()+ylab("Number of Camels")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .9),color="black")+xlab("Community/Ranch")+theme_ipsum()
 
 
 tab<-IRENE_DATA_ANALYSIS_R %>% tabyl(Gender,LPS)  
@@ -519,7 +524,7 @@ IRENE_DATA_ANALYSIS_R %>% tabyl(Gender,LPS) %>% janitor::fisher.test()
 ```
 
 ##### Genes table
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
 
 GT<-IRENE_DATA_ANALYSIS_R %>%filter(mo=="Escherichia coli") %>%  select(LPS,TEM,AMC:NOR) %>% mutate_at(vars(AMC:NOR), as.rsi) %>% melt(id=c("LPS","TEM")) %>% filter(value=="R")%>% filter(TEM!="NEG") %>% filter(TEM!="")
 
@@ -573,7 +578,7 @@ GENTB
 ```
 
 #### Gender table
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,dpi=400}
 
 N<-IRENE_DATA_ANALYSIS_R %>% tabyl(LPS) %>% select(-percent)
 AGE<-IRENE_DATA_ANALYSIS_R %>% tabyl(LPS,AGE) %>% select(-LPS)
