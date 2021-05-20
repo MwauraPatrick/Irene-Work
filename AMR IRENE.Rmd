@@ -79,7 +79,7 @@ req <- substitute(require(x, character.only = TRUE))
 conflict_prefer("rename", "dplyr")
 conflict_prefer("desc", "plyr")
 conflict_prefer("fmt_percent","huxtable")
-setwd("E:/RESULTS/Mwaura/mwaura/WORK1/Covid19/Irene Work")
+#setwd("E:/RESULTS/Mwaura/mwaura/WORK1/Covid19/Irene Work")
 IRENE_DATA_ANALYSIS_R <- fread("IRENE DATA ANALYSIS R.csv")
 attach(IRENE_DATA_ANALYSIS_R)
 ```
@@ -115,7 +115,7 @@ IRENE_DATA_ANALYSIS_R %>% select(mo) %>% group_by(mo) %>%  dplyr::summarise(n = 
 IRENE_DATA_ANALYSIS_R %>% tabyl(mo,LPS) %>%  adorn_totals(c("row","col")) %>%  adorn_percentages("col") %>%
   adorn_pct_formatting(digits = 2) %>%
   adorn_ns() %>%  flextable()%>% theme_zebra() %>% border(border=fp_border(color = "black"),part = "all")%>% border(part = "all")%>% add_header_lines(values="E.coli recovered by Livestock Production System") %>% fontsize(i=1,size=12,part="header")
-IRENE_DATA_ANALYSIS_R %>% select(mo,Community) %>% melt(id.vars="Community") %>% filter(value!="Others") %>% ggplot(aes(x=Community,fill=value))+geom_bar(fill="steelblue")+ylab("E.coli")+xlab("Livestock Production System")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .9),color="black")+ggtitle("Distribution of E.coli recovered")+theme_ipsum()
+IRENE_DATA_ANALYSIS_R %>% select(mo,Community) %>% melt(id.vars="Community") %>% filter(value!="Others") %>% ggplot(aes(x=Community,fill=value))+geom_bar(fill="steelblue")+ylab("E.coli")+xlab("Livestock Production System")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .9),color="black")+ggtitle("Distribution of E.coli recovered")+theme_ipsum()+ theme(axis.title.x = element_text( hjust = 0.5),axis.title.y = element_text( hjust = 0.5))
 
 IRENE_DATA_ANALYSIS_R %>% ggplot(aes(x=mo,fill=LPS))+geom_bar()+ylab("Number of Camels")+xlab("Microbial Organism")+stat_count(geom="text",aes(label=stat(count)), position = position_stack(vjust = .9),color="black")+ggtitle("E.coli Recovered")+theme_ipsum()+ theme(axis.title.x = element_text( hjust = 0.5),axis.title.y = element_text( hjust = 0.5))
 
@@ -247,6 +247,11 @@ colnames(Int) <- c("LPS_Int","A.Int","I.Int","R.Int","S.Int")
 Int1<-Int %>% select(I.Int,R.Int,S.Int) %>% na.omit()
 
 cbind(GP,Ext1,Int1) %>%  huxtable() %>% huxtable::as_flextable() %>% merge_v(j="AB_Group")%>% theme_zebra() %>% border %>%add_header_row(values=c("Antibiotics","Extensive","Intensive"),colwidths =c(2,3,3) )%>% theme_zebra() %>% border(border=fp_border(color = "black"),part = "all") %>% fontsize(i=1,size=12,part="header")  %>% add_header_lines(values="Comparison table(Extensive and Intensive) Percentages , Resistance to all antibiotics")%>% border(border=fp_border(color = "black"),part = "all") %>% fontsize(i=1,size=12,part="header") 
+
+
+
+AG<-struct %>% filter(struct$interpretation=="R")
+ggplot(data=AG, mapping =  aes(x=variable,y=value,fill=LPS))+geom_bar(stat="identity",position=position_dodge())+scale_fill_manual(values = c("red", "blue"))+ggtitle("Antimicrobial Resistance with Livestock Procuction")+theme_ipsum(plot_title_size = 12,caption_face = "italic",caption_margin = 10 ,axis_text_size = 10,axis_title_size = 10,axis_title_face = "plain",axis_title_just = "rt",plot_margin = margin(5, 5, 5, 5),grid_col = "#cccccc",grid = TRUE,axis_col = "black", axis = TRUE,ticks = FALSE)+ylab("Percentage \n Resistance")+xlab("Antimicrobial Agents")+ theme(axis.title.x = element_text( hjust = 0.5),axis.title.y = element_text( hjust = 0.5))+ guides(fill=guide_legend(title="Livestock \n Production System"))+theme(plot.title = element_text(hjust = 0.5))
 ```
 
 
